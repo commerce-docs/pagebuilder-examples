@@ -1,0 +1,10 @@
+.idea
+**/node_modules/*
+**.js.map
+**.d.js
+/dev/tests/acceptance/vendor
+static-error-log.xml
+.DS_Store
+.vscode
+.history/
+/yarn-error.log
