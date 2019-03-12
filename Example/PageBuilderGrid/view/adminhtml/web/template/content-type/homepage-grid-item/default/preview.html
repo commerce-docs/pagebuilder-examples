@@ -1,0 +1,20 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<div class="pagebuilder-content-type type-container pagebuilder-homepage-item"
+     attr="data.main.attributes"
+     ko-style="data.main.style"
+     css="Object.assign(data.main.css(), {'empty-container': contentType.children().length == 0})"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template" />
+    <render args="childTemplate" />
+
+    <div class="pagebuilder-display-label" html="function () { return displayLabel().toUpperCase(); }()"></div>
+    <div class="pagebuilder-empty-container" css="{visible: contentType.children().length == 0}" translate="'Empty Grid Item'">
+        <div class="pagebuilder-drop-indicator"></div>
+    </div>
+</div>

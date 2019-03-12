@@ -1,0 +1,37 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+.pagebuilder-homepage-grid {
+    &:extend(.page-main);
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 270px 370px 270px;
+
+    .pagebuilder-homepage-grid-item {
+        &:nth-child(1) {
+            grid-column: ~"2 / 4";
+            grid-row: 1;
+        }
+        &:nth-child(2) {
+            grid-column: 1 ;
+            grid-row: ~"1 / 3";
+        }
+        &:nth-child(3) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        &:nth-child(4) {
+            grid-column: 3;
+            grid-row: ~"2 / 4";
+        }
+        &:nth-child(5) {
+            grid-column: ~"1 / 3";
+            grid-row: 3;
+        }
+    }
+}
