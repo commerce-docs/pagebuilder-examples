@@ -18,7 +18,7 @@ Assuming you have Page Builder 1.0.0 already installed and activated, you can in
    
 4. Navigate to a Page Builder instance to ensure the example content types appear in the Page Builder panel as shown here:
 
-    ![Example content types](example-content-types.png)
+   <img src="example-content-types.png" alt="Content type examples in panel" width="310" height="273">
     
 
 ## Contributing
