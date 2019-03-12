@@ -9,7 +9,7 @@
     <type name="homepage-grid-item"
           label="Grid Item"
           component="Magento_PageBuilder/js/content-type-collection"
-          preview_component="DaveMacaulay_PageBuilderGrid/js/content-type/homepage-grid-item/preview"
+          preview_component="Example_PageBuilderGrid/js/content-type/homepage-grid-item/preview"
           master_component="Magento_PageBuilder/js/content-type/master-collection"
           form="pagebuilder_homepage_grid_item_form"
           menu_section="layout"
@@ -24,8 +24,8 @@
         <appearances>
             <appearance default="true"
                         name="default"
-                        preview_template="DaveMacaulay_PageBuilderGrid/content-type/homepage-grid-item/default/preview"
-                        master_template="DaveMacaulay_PageBuilderGrid/content-type/homepage-grid-item/default/master"
+                        preview_template="Example_PageBuilderGrid/content-type/homepage-grid-item/default/preview"
+                        master_template="Example_PageBuilderGrid/content-type/homepage-grid-item/default/master"
                         reader="Magento_PageBuilder/js/master-format/read/configurable">
                 <elements>
                     <element name="main">
