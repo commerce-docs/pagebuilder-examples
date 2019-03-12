@@ -1,0 +1,139 @@
+// Styling for "Default" appearance of content type
+
+[data-content-type="example_quote"] {
+    blockquote {
+        display: block;
+        font-size: 1.3em;
+        margin: 1em;
+        quotes: "\201C" "\201D" "\2018" "\2019";
+        text-decoration: none;
+        word-break: normal !important;
+        line-height: 1.5;
+        padding: 0;
+        font-weight: 300;
+
+        &:before {
+            content: open-quote;
+            font-size: 2.6em;
+            margin-right: 0.14em;
+            vertical-align: -0.4em;
+            line-height: 0;
+            margin-left: -0.45em;
+            font-weight: 300;
+        }
+
+        &:after {
+            content: close-quote;
+            font-size: 0;
+            line-height: 0;
+            margin-left: 0;
+        }
+    }
+
+    .quote-author {
+        padding-right: 30px;
+        font-size: 14px;
+        color: #666666;
+        margin-left: 1.1em;
+        word-break: normal !important;
+    }
+
+    .quote-description {
+        padding-right: 30px;
+        font-size: 14px;
+        color: #999999;
+        margin-left: 1.1em;
+        font-weight: 300;
+        word-break: normal !important;
+    }
+
+    .quote-description-text-content {
+        position: relative;
+    }
+
+    // Content type's CSS classes for end-user styling options
+    .black-quote {
+        color: #333333;
+
+        &:before {
+            color: #333333;
+        }
+    }
+
+    .blue-quote {
+        color: #007ab9;
+
+        &:before {
+            color: #71adcc;
+        }
+    }
+
+    .green-quote {
+        color: #009900;
+
+        &:before {
+            color: #009900;
+        }
+    }
+
+    .red-quote {
+        color: #990000;
+
+        &:before {
+            color: #990000;
+        }
+    }
+
+    .purple-quote {
+        color: #990099;
+
+        &:before {
+            color: #990099;
+        }
+    }
+
+}
+
+// CSS for panel icon
+.icon-pagebuilder-quote {
+    content: url('@{baseDir}Example_PageBuilderQuote/css/images/content-type/example-quote/appearance/icon-pagebuilder-quote.svg');
+    width: 18px;
+    height: 18px;
+    margin-bottom: -1px;
+}
+
+// CSS images for toolbar
+.icon-pagebuilder-black-swatch {
+    content: url('@{baseDir}Example_PageBuilderQuote/css/images/content-type/example-quote/appearance/icon-pagebuilder-black-swatch.svg');
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.icon-pagebuilder-blue-swatch {
+    content: url('@{baseDir}Example_PageBuilderQuote/css/images/content-type/example-quote/appearance/icon-pagebuilder-blue-swatch.svg');
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.icon-pagebuilder-green-swatch {
+    content: url('@{baseDir}Example_PageBuilderQuote/css/images/content-type/example-quote/appearance/icon-pagebuilder-green-swatch.svg');
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.icon-pagebuilder-red-swatch {
+    content: url('@{baseDir}Example_PageBuilderQuote/css/images/content-type/example-quote/appearance/icon-pagebuilder-red-swatch.svg');
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.icon-pagebuilder-purple-swatch {
+    content: url('@{baseDir}Example_PageBuilderQuote/css/images/content-type/example-quote/appearance/icon-pagebuilder-purple-swatch.svg');
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}

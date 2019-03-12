@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/view.xsd">
+    <vars module="Magento_PageBuilder">
+        <var name="breakpoints">
+            <var name="mobile">
+                <var name="conditions">
+                    <var name="max-width">600px</var>
+                </var>
+            </var>
+        </var>
+    </vars>
+</view>
