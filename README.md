@@ -11,11 +11,14 @@ Assuming you have Page Builder 1.0.0 already installed and activated, you can in
 1. Create a directory named `Example` within the `app/code/` directory.
 2. Copy `PageBuilderQuote`, `PageBuilderGrid`, and `PageBuilderFaq` into the `Example` directory. This ensures the module names will resolve because each Module is registered with the `Example_` prefix.
 3. Enable the modules using the following command:
+
    ```bash
    bin/magento setup:upgrade
    ```
+   
 4. Navigate to a Page Builder instance to ensure the example content types appear in the Page Builder panel as shown here:
-    ![Example content types](example-content-types.png){:width="150px" height="auto"}
+
+    ![Example content types](example-content-types.png)
     
 
 ## Contributing
