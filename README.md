@@ -9,7 +9,10 @@ This repo is a collection of Page Builder content type modules created to teach 
 Assuming you have Page Builder 1.0.0 already installed and activated, you can install these example modules as you do any other Magento module. 
 
 1. Create a directory named `Example` within the `app/code/` directory.
-2. Copy `PageBuilderQuote`, `PageBuilderGrid`, and `PageBuilderFaq` into the `Example` directory. This ensures the module names will resolve because each module is named with the `Example_` prefix.
+2. Copy `PageBuilderQuote`, `PageBuilderGrid`, and `PageBuilderFaq` into the `Example` directory to ensure the module names will resolve using the `Example_` prefix.
+    
+    <img src="examples-install-location.png" alt="Examples installation directory" width="318px"/>
+    
 3. Enable the modules using the following command:
 
    ```bash
