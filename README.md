@@ -9,7 +9,7 @@ This repo is a collection of Page Builder content type modules created to teach 
 Assuming you have Page Builder 1.0.0 already installed and activated, you can install these example modules as you do any other Magento module. 
 
 1. Create a directory named `Example` within the `app/code/` directory.
-2. Copy `PageBuilderQuote`, `PageBuilderGrid`, and `PageBuilderFaq` into the `Example` directory. This ensures the module names will resolve because each Module is registered with the `Example_` prefix.
+2. Copy `PageBuilderQuote`, `PageBuilderGrid`, and `PageBuilderFaq` into the `Example` directory. This ensures the module names will resolve because each module is named with the `Example_` prefix.
 3. Enable the modules using the following command:
 
    ```bash
@@ -18,9 +18,10 @@ Assuming you have Page Builder 1.0.0 already installed and activated, you can in
    
 4. Navigate to a Page Builder instance to ensure the example content types appear in the Page Builder panel as shown here:
 
-   <img src="example-content-types.png" alt="Content type examples in panel" width="310" height="273">
+   <img src="example-content-types.png" alt="Content type examples in panel" style="max-width:309px"/>
     
 
 ## Contributing
 
-You are welcome to submit PRs to help us improve and/or update these Page Builder examples. We also welcome your feedback and ideas about creating other code examples to add to this repo. 
+You are welcome to submit PRs to help us improve and/or update these Page Builder examples. 
+We also welcome your feedback and ideas about creating other code examples to add to this repo. 
