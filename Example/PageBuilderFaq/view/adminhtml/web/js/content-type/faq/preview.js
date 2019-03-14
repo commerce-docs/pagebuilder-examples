@@ -71,8 +71,7 @@ define([
             this.contentType,
             this.contentType.stageId,
             {
-                question: $t("Question ") + (self.contentType.children().length + 1),
-                answer: $t("Edit answer here.")
+                question: $t("Question ") + (self.contentType.children().length + 1)
             }
         ).then(function (container) {
             self.contentType.addChild(container);

@@ -5,6 +5,12 @@
 .pagebuilder-faq-item {
     border: 1px solid #cccccc;
 
+    .placeholder-text {
+        left: 5px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+    }
     [data-role="collapsible"] {
         font-weight: bold;
         line-height: 1.1;
@@ -58,13 +64,6 @@
     > .mce-content-body {
         min-height: 50px;
         padding: 5px !important;
-
-        + .placeholder-text {
-            left: 5px;
-            pointer-events: none;
-            position: absolute;
-            top: 5px;
-        }
     }
     > .mce-edit-focus {
         ~ .pagebuilder-options,

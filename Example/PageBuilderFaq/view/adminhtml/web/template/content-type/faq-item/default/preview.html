@@ -2,7 +2,7 @@
     <render args="getOptions().template" />
     <h3 data-bind="liveEdit: { field: 'question', placeholder: 'Edit question' }" data-role="collapsible"></h3>
     <div data-role="content">
-        <div if="isWysiwygSupported()" class="inline-wysiwyg" ko-style="data.answer.style" css="data.answer.css" attr="data.answer.attributes" html="data.answer.html" afterRender="initWysiwyg"/>
+        <div if="isWysiwygSupported()" class="inline-wysiwyg" ko-style="data.answer.style" css="data.answer.css" attr="data.answer.attributes" afterRender="initWysiwyg"/>
         <div if="isWysiwygSupported()" class="placeholder-text" ifnot="data.answer.html" translate="'Edit answer here.'"></div>
         <div ifnot="isWysiwygSupported()">
         <textarea class="inline-wysiwyg-textarea"
