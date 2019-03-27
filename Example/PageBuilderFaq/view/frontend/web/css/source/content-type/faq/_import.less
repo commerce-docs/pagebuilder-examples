@@ -2,10 +2,11 @@
 //  FAQ styles
 //  _____________________________________________
 
-[data-content-type="faq"] {
-    border-bottom: 1px solid #ccc !important;
-    list-style-type: none;
-    position: relative;
-    width: 100%;
+& when (@media-common = true) {
+    [data-content-type="faq"] {
+        border-bottom: 1px solid #ccc !important;
+        list-style-type: none;
+        position: relative;
+        width: 100%;
+    }
 }
-
