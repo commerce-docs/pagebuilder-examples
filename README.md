@@ -8,9 +8,9 @@ This repo is a collection of Page Builder content type modules created to teach 
 
 The Page Builder team members created these modules to serve as examples for learning. They are not fully tested or guaranteed to work perfectly. However, we will do our best to improve these examples and keep them updated with the latest releases of Page Builder.
 
-- **[PageBuilderExtensionBanner](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderExtensionBanner)** — Create by [Bruce Denham](https://github.com/bdenham). This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the [Create a Extend a content type tutorial](../create-custom-content-type/overview.md).
-- **[PageBuilderQuote](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderQuote)** — Create by [Bruce Denham](https://github.com/bdenham). This module shows you how to use a simple content type to stylize quotations for things like customer testimonials. This is the completed module featured in the [Create a content type tutorial](../create-custom-content-type/overview.md).
-- **[PageBuilderGrid](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderGrid)** — Created by [Dave Macaulay](https://github.com/davemacaulay). This module shows you how to create a content type to rebuild the Magento Luma home page using a grid structure with grid items.
+- **[PageBuilderExtensionBanner](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderExtensionBanner)** — Create by [Bruce Denham](https://github.com/bdenham). This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the [Extend a content type tutorial](https://devdocs.magento.com/page-builder/docs/extend-existing-content-type/overview.html).
+- **[PageBuilderQuote](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderQuote)** — Create by [Bruce Denham](https://github.com/bdenham). This module shows you how to create a content type for a customer testimonial page. This is the completed Quote module featured in the [Create a content type tutorial](https://devdocs.magento.com/page-builder/docs/create-custom-content-type/overview.html).
+- **[PageBuilderGrid](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderGrid)** — Created by [Dave Macaulay](https://github.com/davemacaulay). This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items.
 - **[PageBuilderFaq](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderFaq)** — Created by [Igor Melnikov](https://github.com/melnikovi). This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers.
 
 ## Modules Installation
@@ -18,6 +18,11 @@ The Page Builder team members created these modules to serve as examples for lea
 Assuming you have Page Builder 1.0.0 already installed and activated, you can install these example modules as you do any other Magento module. 
 
 1. Copy the `Example` directory into your Magento installation's `app/code` directory, as shown here:
+
+    **To Symlink**:
+    ```terminal
+    ln -s <Relative_route_to_cloned_Example_directory>
+    ```
     
     <img src="examples-install-location.png" alt="Examples installation directory" width="318px"/>
     
