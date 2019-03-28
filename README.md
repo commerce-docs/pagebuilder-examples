@@ -17,7 +17,7 @@ The Page Builder team members created these modules to serve as examples for lea
 
 Assuming you have Page Builder 1.0.0 already installed and activated, you can install these example modules as you do any other Magento module. 
 
-1. Copy the `Example` directory into your Magento installation's `app/code` directory, as shown here:
+1. Copy or symlink the `Example` directory into your Magento installation's `app/code` directory, as shown here:
 
     **To Symlink**:
     ```terminal
