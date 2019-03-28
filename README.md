@@ -4,7 +4,7 @@ This repo is a collection of Page Builder content type modules created to teach 
 
 **NOTE**: The code examples included in this repository are only compatible with Magento 2.3.1 with Page Builder 1.0.0 installed.
 
-# Example Modules
+## Example Modules
 
 The Page Builder team members created these modules to serve as examples for learning. They are not fully tested or guaranteed to work perfectly. However, we will do our best to improve these examples and keep them updated with the latest releases of Page Builder.
 
