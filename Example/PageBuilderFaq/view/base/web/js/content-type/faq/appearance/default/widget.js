@@ -10,6 +10,9 @@ define([
             $(this).find("[data-collapsible]").attr("data-role", "collapsible");
             $(this).find("[data-content]").attr("data-role", "content");
         });
-        element.accordion();
+        element.accordion({
+            collapsible: true,
+            multipleCollapsible: true
+        });
     };
 });
