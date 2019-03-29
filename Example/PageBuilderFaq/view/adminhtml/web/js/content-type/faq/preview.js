@@ -36,10 +36,7 @@ define([
                 $(this.element).accordion('destroy');
             } catch (e) {
             }
-            $(this.element).accordion({
-                collapsible: true,
-                multipleCollapsible: true
-            });
+            $(this.element).accordion();
         }
     }, 10);
 
