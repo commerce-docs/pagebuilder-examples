@@ -4,21 +4,21 @@
     blockquote {
         display: block;
         font-size: 1.3em;
-        margin: 1em;
+        margin: 1em 1em .6em 1em;
         quotes: "\201C" "\201D" "\2018" "\2019";
         text-decoration: none;
         word-break: normal !important;
-        line-height: 1.5;
+        line-height: 1.4;
         padding: 0;
         font-weight: 300;
 
         &:before {
             content: open-quote;
-            font-size: 2.6em;
+            font-size: 2.4em;
             margin-right: 0.14em;
             vertical-align: -0.4em;
             line-height: 0;
-            margin-left: -0.45em;
+            margin-left: -0.4em;
             font-weight: 300;
         }
 
@@ -28,27 +28,37 @@
             line-height: 0;
             margin-left: 0;
         }
+
+        &.placeholder-text {
+            margin: 1em;
+            padding-left: 0.9em;
+        }
     }
 
     .quote-author {
         padding-right: 30px;
         font-size: 14px;
         color: #666666;
-        margin-left: 1.1em;
+        margin-left: 1.5em;
         word-break: normal !important;
     }
 
     .quote-description {
+        position: relative;
         padding-right: 30px;
         font-size: 14px;
         color: #999999;
-        margin-left: 1.1em;
+        margin-left: 1.5em;
         font-weight: 300;
         word-break: normal !important;
-    }
 
-    .quote-description-text-content {
-        position: relative;
+        // compensate for tinymce offsets
+        .placeholder-text {
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+        }
     }
 
     // Content type's CSS classes for end-user styling options

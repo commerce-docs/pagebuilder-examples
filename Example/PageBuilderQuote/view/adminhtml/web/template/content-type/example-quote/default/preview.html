@@ -14,7 +14,7 @@
         <blockquote class="quote-content" attr="data.quote.attributes" css="data.quote.css" ko-style="data.quote.style" data-bind="liveEdit: { field: 'quote_text', placeholder: $t('Enter Quote') }"></blockquote>
     </div>
     <div class="quote-author" attr="data.author.attributes" ko-style="data.author.style" css="data.author.css" data-bind="liveEdit: { field: 'quote_author', placeholder: $t('Enter Author') }"></div>
-    <div class="quote-description-text-content">
+    <div class="quote-description">
         <div if="isWysiwygSupported()" class="inline-wysiwyg" ko-style="data.author_title.style" css="data.author_title.css" attr="data.author_title.attributes" afterRender="initWysiwyg" event="mousedown: stopEvent">
             <div html="data.author_title.html" />
         </div>
