@@ -13,12 +13,13 @@ define([
 
     Preview.prototype.buildSlickConfig = function buildSlickConfig() {
         var data = this.contentType.dataStore.getState();
-        var settings = $super.buildSlickConfig.call(this, arguments);
+        var settings = $super.buildSlickConfig.call(this);
 
         settings.centerMode = data.center_mode === "true";
         settings.centerPadding = data.center_padding;
 
         return settings;
-    }
+    };
+
     return Preview;
 });

@@ -5,7 +5,7 @@
                 <item name="slider" xsi:type="array">
                     <item name="default" xsi:type="array">
                         <item name="component" xsi:type="string">Example_PageBuilderExtensionSlider/js/content-type/slider/appearance/default/widget</item>
-                        <!--optional if you want load widget per appearance-->
+                        <!--optional if you want to load widget per appearance-->
                         <item name="appearance" xsi:type="string">default</item>
                     </item>
                 </item>
