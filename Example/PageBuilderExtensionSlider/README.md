@@ -11,8 +11,8 @@ _Slider Center Mode and Padding from slick_
 
 To install this extension module:
 
-1. Copy the PageBuilderExtensionSlider directory and all its contents into a new (or your existing) `Example` vendor directory: `<magento-root>/app/code/Example`.
-2. Command line into your magento-root directory and run `bin/magento setup:upgrade` to install the extension.
+1. Copy the `PageBuilderExtensionSlider` directory and all its contents into a new (or your existing) `Example` vendor directory: `<magento-root>/app/code/Example`.
+2. Command line into your `<magento-root>` directory and run `bin/magento setup:upgrade` to install the extension.
 3. Navigate to a Page Builder instance, drag a Slider onto the Admin stage, and add two or three Slides.
 4. Open the Slider Editor, turn on the **Center Mode** setting, and adjust the **Center Padding** as desired.
 5. **Save** the form settings and view your new center-mode Slider in action. 
