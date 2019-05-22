@@ -1,0 +1,5 @@
+Copyright © 2019 Adobe, Inc.
+
+Subject to Licensee's payment of fees and compliance with all applicable terms and conditions, example code files included in this repository are licensed under the Magento Customer Agreement.
+
+Please visit http://magento.com/legal/terms/ to review the full text of the Magento Customer Agreement.
