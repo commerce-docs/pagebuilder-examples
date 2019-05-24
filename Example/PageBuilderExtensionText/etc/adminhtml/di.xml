@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\PageBuilder\Model\Wysiwyg\DefaultConfigProvider">
+        <arguments>
+            <argument name="additionalSettings" xsi:type="array">
+
+                <!-- How to add or remove TinyMCE toolbar buttons to your custom Text editor.
+                     Note the 'code' plugin added to the toolbar here. This provides access
+                     to the HTML code used in the editor. To remove toolbar buttons, simply
+                     delete one or more of the text entries shown here.-->
+                <item name="toolbar" xsi:type="string">
+                    undo redo | code | styleselect | forecolor backcolor | bold italic underline |
+                    alignleft aligncenter alignright | numlist bullist |
+                    link image table charmap
+                </item>
+
+                <!-- How to add additional styles from your theme to the TinyMCE Formats selector -->
+                <item name="style_formats" xsi:type="array">
+                    <item name="title" xsi:type="array">
+                        <item name="title" xsi:type="string">Title</item>
+                        <item name="block" xsi:type="string">div</item>
+                        <item name="classes" xsi:type="string">theme-title</item>
+                    </item>
+                    <item name="subtitle" xsi:type="array">
+                        <item name="title" xsi:type="string">Subtitle</item>
+                        <item name="block" xsi:type="string">div</item>
+                        <item name="classes" xsi:type="string">theme-subtitle</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
