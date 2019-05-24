@@ -1,6 +1,5 @@
 # PageBuilderExtensionSlider
 
-
 Under the hood, the Page Builder Slider uses the [slick carousel](https://kenwheeler.github.io/slick). In this example, we show you how to add two [slick settings](https://kenwheeler.github.io/slick/#settings) not included in the native Page Builder Slider: `centerMode` and `centerPadding`, as shown here:
 
 ![Slider Center Mode](slider-center-mode.gif "Slider Center Mode")

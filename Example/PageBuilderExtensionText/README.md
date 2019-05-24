@@ -1,6 +1,5 @@
 # PageBuilderExtensionText
 
-
 Under the hood, the Page Builder Text content type uses the [TinyMCE WYSIWYG HTML Editor](https://www.tiny.cloud/docs-4x/). In this example, we show you how to:
 
 * Add and remove buttons from the [TinyMCE toolbar](https://www.tiny.cloud/docs/advanced/editor-control-identifiers/#toolbarcontrols) 
