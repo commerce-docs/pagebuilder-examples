@@ -5,7 +5,7 @@ Under the hood, the Page Builder Text content type uses the [TinyMCE WYSIWYG HTM
 
 * Add and remove buttons from the [TinyMCE toolbar](https://www.tiny.cloud/docs/advanced/editor-control-identifiers/#toolbarcontrols) 
 * Integrate your theme's typography into the [TinyMCE Formats selector](https://www.tiny.cloud/docs/configure/content-formatting/#formattype)
-* Add the [TinyMCE code plugin](https://www.tiny.cloud/docs/plugins/code/) to the toolbar so you can view the HTML code directly.
+* Add the [TinyMCE code plugin](https://www.tiny.cloud/docs/plugins/code/) (< >) to the toolbar so you can view the HTML code directly.
 
 ![Text content type extension](text-extension.gif "Text content type extension")
 
