@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd" extends="pagebuilder_base_form">
+
+    <!-- How to remove a specific field within Background section of the base form with background attributes -->
+    <fieldset name="background">
+        <field name="background_color">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+
+    <!-- How to remove the entire Background section of the base form with background attributes -->
+<!--    <fieldset name="background">-->
+<!--        <argument name="data" xsi:type="array">-->
+<!--            <item name="config" xsi:type="array">-->
+<!--                <item name="componentDisabled" xsi:type="boolean">true</item>-->
+<!--            </item>-->
+<!--        </argument>-->
+<!--    </fieldset>-->
+
+</form>
