@@ -26,7 +26,7 @@ To install this extension module:
 
 1. Copy the `PageBuilderExtensionBaseForms` directory and all its contents into a new (or your existing) `Example` vendor directory: `<magento-root>/app/code/Example`.
 2. Command line into your `<magento-root>` directory and run `bin/magento setup:upgrade` to install the extension.
-3. Navigate to a Page Builder instance, open the editor for an existing content type (Row) and view the altered form with the removed fields / fieldsets.
+3. Navigate to a Page Builder instance, open the editor for an existing content type (Row, for example) and view the altered form with the removed fields / fieldsets.
 
 ## Feedback
 
