@@ -10,7 +10,6 @@
         <field name="content" formElement="wysiwyg">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="source" xsi:type="string">block</item>
                     <item name="wysiwygConfigData" xsi:type="array">
                         <!-- Enable and disable Page Builder here -->
                         <item name="is_pagebuilder_enabled" xsi:type="boolean">false</item>

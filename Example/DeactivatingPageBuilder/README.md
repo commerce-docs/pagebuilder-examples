@@ -12,6 +12,31 @@ To install this module:
 
     ![Page Builder disabled for blocks](pagebuilder-disabled-for-blocks.png "Page Builder disabled for blocks")
 
+## Discussion
+
+By default, this module disables Page Builder for CMS Blocks (`cms_block_form.xml`). The module also includes the Dynamic Blocks form (`banner_form.xml`) and Pages form (`cms_block_form.xml`) to show how you can disable Page Builder for those areas as well:
+
+![CMS form overrides](cms-form-overrides.png "CMS form overrides for disabling Page Builder")
+
+Using Magento's XML merging feature, the module simply adds `is_pagebuilder_enabled` (boolean) to the Admin's `content` form fields for Blocks, Dynamic Blocks, and Pages, as shown here:
+
+```xml
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general">
+        <field name="content" formElement="wysiwyg">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="wysiwygConfigData" xsi:type="array">
+                        <!-- Enable and disable Page Builder here -->
+                        <item name="is_pagebuilder_enabled" xsi:type="boolean">false</item>
+                    </item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+</form>
+```
+
 ## Feedback
 
 We encourage and welcome you to help us keep these examples current by submitting pull requests and issues. 
