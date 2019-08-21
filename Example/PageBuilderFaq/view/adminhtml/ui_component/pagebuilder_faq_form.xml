@@ -55,7 +55,7 @@
             <formElements>
                 <select>
                     <settings>
-                        <options class="AppearanceSourceImage" />
+                        <options class="AppearanceSourceFaq" />
                     </settings>
                 </select>
             </formElements>
