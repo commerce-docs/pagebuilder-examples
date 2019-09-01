@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Example_PageBuilderExtensionImage/js/resource/lazysizes/lazySizesConfig.js"></script>
+        <script src="Example_PageBuilderExtensionImage/js/resource/lazysizes/lazysizes.js" async=""></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/plugins/attrchange/ls.attrchange.min.js" src_type="url"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js" src_type="url"></script>-->
+    </head>
+</page>

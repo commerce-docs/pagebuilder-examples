@@ -1,0 +1,25 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<div class="pagebuilder-content-type pagebuilder-image type-nested" event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template" />
+    <figure attr="data.main.attributes" ko-style="Object.assign({}, data.main.style())" css="data.main.css">
+        <scope args="getUploader().getUiComponent()">
+            <render />
+        </scope>
+        <img attr="data.desktop_image.attributes"
+            class="lazyload preview-image"
+            css="data.desktop_image.css"
+            ko-style="data.desktop_image.style" />
+        <figcaption if="data.caption.html()"
+            attr="data.caption.attributes"
+            css="data.caption.css"
+            html="data.caption.html"
+            ko-style="data.caption.style">
+        </figcaption>
+    </figure>
+</div>
