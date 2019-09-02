@@ -1,0 +1,61 @@
+// Buttons
+
+[data-content-type="button-item"], [data-content-type="banner"] {
+    a,
+    button,
+    div {
+        &.pagebuilder-button-hollow {
+            .lib-link-as-button();
+            .lib-button(@_button-margin: 0 10px 10px 0);
+            .lib-button-l();
+            .lib-css(border-radius, 0);
+            box-shadow: none;
+        }
+
+        &.pagebuilder-button-primary, &.pagebuilder-button-secondary,
+        &.pagebuilder-button-link, &.pagebuilder-button-hollow {
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Poppins, sans-serif;
+            padding: 14px 36px;
+            cursor: pointer;
+
+            &:hover {
+                border: none;
+            }
+        }
+
+        &.pagebuilder-button-hollow {
+            border: 2px solid #333333;
+            padding: 20px 36px 6px 36px;
+            background: transparent;
+            color: #333333;
+
+            &:hover {
+                background: #DDDDDD;
+                border: 2px solid #333333;
+            }
+        }
+
+        &.pagebuilder-button-primary {
+            border: none;
+            background: #1979C3;
+
+            &:hover {
+                background: #025FA7;
+            }
+        }
+
+        &.pagebuilder-button-secondary {
+            border: none;
+            background: #F0F0F0;
+
+            &:hover {
+                background: #DDDDDD;
+            }
+        }
+    }
+}
