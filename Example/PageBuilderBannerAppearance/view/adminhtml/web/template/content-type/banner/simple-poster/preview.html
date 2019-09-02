@@ -1,0 +1,34 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<div class="pagebuilder-content-type pagebuilder-banner type-nested" attr="data.main.attributes" ko-style="data.main.style" css="data.main.css" event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template" />
+    <div class="pagebuilder-banner-wrapper" attr="data.wrapper.attributes" ko-style="data.wrapper.style" css="data.wrapper.css" event="{mouseover: onMouseOverWrapper, mouseout: onMouseOutWrapper}">
+        <div class="pagebuilder-overlay pagebuilder-poster-overlay" attr="data.overlay.attributes" ko-style="data.overlay.style" css="data.overlay.css" event="mousedown: activateEditor">
+            <scope args="getUploader().getUiComponent()">
+                <render />
+            </scope>
+            <div class="pagebuilder-simple-poster-content">
+                <div class="pagebuilder-banner-text-content">
+                    <div if="isWysiwygSupported()" class="inline-wysiwyg" ko-style="data.content.style" css="data.content.css" attr="data.content.attributes" afterRender="initWysiwyg" event="mousedown: stopEvent">
+                        <div html="data.content.html" />
+                    </div>
+                    <div if="isWysiwygSupported()" class="placeholder-text" ifnot="data.content.html" translate="'Edit Banner Text'"></div>
+                    <textarea ifnot="isWysiwygSupported()" class="inline-wysiwyg-textarea" afterRender="initTextarea" event="{keyup: onTextareaKeyUp, focus: onTextareaFocus, blur: onTextareaBlur, mousedown: stopEvent}" attr="placeholder: $t('Edit Banner Text')"/>
+                </div>
+                <a if="data.main.attributes()['data-show-button'] !== 'never'"
+                    type="button"
+                    class="pagebuilder-banner-button"
+                    attr="data.button.attributes"
+                    ko-style="data.button.style"
+                    css="data.button.css">
+                    <span data-bind="liveEdit: { field: 'button_text', placeholder: buttonPlaceholder, selectAll: true }"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
