@@ -10,8 +10,8 @@
         <appearances>
             <appearance default="true"
                         name="full-width"
-                        preview_template="Example_PageBuilderExtensionImage/content-type/image/full-width/preview"
-                        master_template="Example_PageBuilderExtensionImage/content-type/image/full-width/master">
+                        preview_template="Example_PageBuilderLazyLoading/content-type/image/full-width/preview"
+                        master_template="Example_PageBuilderLazyLoading/content-type/image/full-width/master">
                 <elements>
                     <element name="desktop_image">
                         <attribute name="image" source="data-src" converter="Magento_PageBuilder/js/converter/attribute/src" preview_converter="Magento_PageBuilder/js/converter/attribute/preview/src"/>

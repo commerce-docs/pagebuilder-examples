@@ -6,4 +6,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Example_PageBuilderExtensionImage', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Example_PageBuilderLazyLoading', __DIR__);

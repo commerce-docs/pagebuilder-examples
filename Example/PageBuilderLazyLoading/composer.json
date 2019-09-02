@@ -1,5 +1,5 @@
 {
-  "name": "example/module-page-builder-extension-image",
+  "name": "example/module-page-builder-lazy-loading-image",
   "description": "PageBuilder Extension for Image to add lazy loading",
   "require": {
     "magento/framework": "*",
