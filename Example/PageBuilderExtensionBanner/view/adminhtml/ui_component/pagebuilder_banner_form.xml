@@ -1,54 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
-    <argument name="data" xsi:type="array">
-        <item name="js_config" xsi:type="array">
-            <item name="provider" xsi:type="string">
-                pagebuilder_banner_form.pagebuilder_banner_form_data_source
-            </item>
-        </item>
-        <item name="label" xsi:type="string" translate="true">Banner</item>
-    </argument>
-    <settings>
-        <deps>
-            <dep>pagebuilder_banner_form.pagebuilder_banner_form_data_source</dep>
-        </deps>
-        <namespace>pagebuilder_banner_form</namespace>
-    </settings>
-    <dataSource name="pagebuilder_banner_form_data_source">
-        <argument name="data" xsi:type="array">
-            <item name="js_config" xsi:type="array">
-                <item name="component" xsi:type="string">Magento_PageBuilder/js/form/provider</item>
-            </item>
-        </argument>
-        <dataProvider name="pagebuilder_banner_form_data_source" class="Magento\PageBuilder\Model\ContentType\DataProvider">
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="appearance_fieldset"
+        sortOrder="10"
+        component="Magento_PageBuilder/js/form/element/dependent-fieldset">
+        <field name="max_height" sortOrder="30" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="number">300</item>
+                </item>
+            </argument>
             <settings>
-                <requestFieldName/>
-                <primaryFieldName/>
+                <label translate="true">Maximum Height</label>
+                <additionalClasses>
+                    <class name="admin__field-small">true</class>
+                </additionalClasses>
+                <addAfter translate="true">px</addAfter>
+                <dataType>text</dataType>
+                <dataScope>max_height</dataScope>
+                <validation>
+                    <rule name="validate-number" xsi:type="boolean">true</rule>
+                </validation>
             </settings>
-        </dataProvider>
-    </dataSource>
-<fieldset name="appearance_fieldset"
-          sortOrder="10"
-          component="Magento_PageBuilder/js/form/element/dependent-fieldset">
-    <field name="max_height" sortOrder="30" formElement="input">
-        <argument name="data" xsi:type="array">
-            <item name="config" xsi:type="array">
-                <item name="default" xsi:type="number">300</item>
-            </item>
-        </argument>
-        <settings>
-            <label translate="true">Maximum Height</label>
-            <additionalClasses>
-                <class name="admin__field-small">true</class>
-            </additionalClasses>
-            <addAfter translate="true">px</addAfter>
-            <dataType>text</dataType>
-            <dataScope>max_height</dataScope>
-            <validation>
-                <rule name="validate-number" xsi:type="boolean">true</rule>
-            </validation>
-        </settings>
-    </field>
-</fieldset>
+        </field>
+    </fieldset>
 </form>
