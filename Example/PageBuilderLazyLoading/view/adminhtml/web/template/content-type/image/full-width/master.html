@@ -1,0 +1,37 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<figure attr="data.main.attributes" ko-style="Object.assign({}, data.main.style())" css="data.main.css">
+    <a if="data.link.attributes().href" attr="data.link.attributes" ko-style="data.link.style" css="data.link.css">
+        <img attr="data.desktop_image.attributes"
+            class="lazyload pagebuilder-mobile-hidden"
+            css="data.desktop_image.css"
+            ko-style="data.desktop_image.style" />
+        <img attr="data.mobile_image.attributes"
+            class="lazyload pagebuilder-mobile-only"
+            css="data.mobile_image.css"
+            ko-style="data.mobile_image.style" />
+    </a>
+
+    <ifnot args="data.link.attributes().href">
+        <img attr="data.desktop_image.attributes"
+            class="lazyload pagebuilder-mobile-hidden"
+            css="data.desktop_image.css"
+            ko-style="data.desktop_image.style"/>
+        <img attr="data.mobile_image.attributes"
+            class="lazyload pagebuilder-mobile-only"
+            css="data.mobile_image.css"
+            ko-style="data.mobile_image.style" />
+    </ifnot>
+
+    <figcaption if="data.caption.html()"
+        attr="data.caption.attributes"
+        css="data.caption.css"
+        html="data.caption.html"
+        ko-style="data.caption.style">
+    </figcaption>
+</figure>
