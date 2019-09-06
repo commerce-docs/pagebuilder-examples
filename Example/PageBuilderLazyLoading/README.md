@@ -106,6 +106,8 @@ We show both changes in our example module's `image.xml` config file:
 
 That's all there is to it! 
 
+## Using other lazy loaders
+
 Instead of using `lazysizes`, you can use other lazyloaders (like [lozad](https://github.com/ApoorvSaxena/lozad.js)) using a similar approach:
 
 1.  Add `lozad.js` file to your module or use a CDN.
