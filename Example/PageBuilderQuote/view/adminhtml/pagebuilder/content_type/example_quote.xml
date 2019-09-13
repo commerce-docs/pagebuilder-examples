@@ -36,7 +36,11 @@
                     <element name="quote">
                         <style name="text_align" source="text_align"/>
                         <html name="quote_text" converter="Magento_PageBuilder/js/converter/html/tag-escaper"/>
-                        <css name="quote_css"/>
+                        <css name="quote_css">
+                            <filter>
+                                <class source="quote-content"/>
+                            </filter>
+                        </css>
                     </element>
                     <element name="author">
                         <style name="text_align" source="text_align"/>
