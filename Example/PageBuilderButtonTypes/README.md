@@ -20,7 +20,7 @@ To see your custom button types render on your storefront as they do within the 
 
 ![Frontend Theme for button type](front-end-theme.png "Frontend Theme for Custom Button Types")
 
-If you want to create something similar to complete this example, here's the `less` for the theme's `_button.less` file shown above.
+If you want to create something similar to complete this example, here's the `less` for the theme's `_button.less` file shown above. This is the same `less` style
 
 ```scss
 [data-content-type="button-item"], [data-content-type="banner"], [data-content-type="slide"] {
