@@ -8,6 +8,8 @@ This repo is a collection of Page Builder content type modules created to teach 
 
 The Page Builder team members created these modules to serve as examples for learning. They are not fully tested or guaranteed to work perfectly. However, we will do our best to improve these examples and keep them updated with the latest releases of Page Builder.
 
+- **[PageBuilderButtonTypes](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderButtonTypes)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+
 - **[PageBuilderLazyLoading](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderLazyLoading)** — This module shows how to add lazy loading behavior to the Image content type. For this example, we use the [lazysizes](https://github.com/aFarkas/lazysizes) loader. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
 - **[DeactivatingPageBuilder](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/DeactivatingPageBuilder)** — This example module shows you how to disable Page Builder for a particular page in Magento, specifically Pages, Blocks, and Dynamic Blocks. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
@@ -22,13 +24,13 @@ The Page Builder team members created these modules to serve as examples for lea
 
 - **[PageBuilderQuote](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderQuote)** — This module shows you how to create a content type for a customer testimonial page. This is the completed Quote module featured in the [Create a content type tutorial](https://devdocs.magento.com/page-builder/docs/create-custom-content-type/overview.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
-- **[PageBuilderGrid](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderGrid)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay). 
+- **[PageBuilderGrid](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderGrid)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
 
 - **[PageBuilderFaq](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderFaq)** — This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers. Created by [Igor Melnikov](https://github.com/melnikovi).
 
 ## Modules Installation
 
-Assuming you have Page Builder 1.0.* already installed and activated, you can install these example modules as you do any other Magento module. 
+Assuming you have Page Builder 1.0.* already installed and activated, you can install these example modules as you do any other Magento module.
 
 1. Copy or symlink the `Example` directory into your Magento installation's `app/code` directory, as shown here:
 
@@ -36,21 +38,21 @@ Assuming you have Page Builder 1.0.* already installed and activated, you can in
     ```terminal
     ln -s <Relative_route_to_cloned_Example_directory>
     ```
-    
+
     <img src="examples-install-location.png" alt="Examples installation directory" width="318px"/>
-    
+
 2. Enable the modules using the following command:
 
    ```bash
    bin/magento setup:upgrade
    ```
-   
+
 3. Navigate to a Page Builder instance to ensure the example content types appear in the Page Builder panel as shown here:
 
    <img src="example-content-types.png" alt="Content type examples shown in panel" width="310px"/>
-    
+
 
 ## Contributing
 
-We encourage and welcome you to help us keep these examples current by submitting PRs and issues. 
-We also welcome your feedback and ideas about creating other code examples to add to this repo. 
+We encourage and welcome you to help us keep these examples current by submitting PRs and issues.
+We also welcome your feedback and ideas about creating other code examples to add to this repo.
