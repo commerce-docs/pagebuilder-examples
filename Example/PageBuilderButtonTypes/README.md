@@ -12,10 +12,11 @@ To install this module:
 2. Command line into your `<magento-root>` directory and run `bin/magento setup:upgrade` to install the extension.
 3. Navigate to a CMS Page and drag a Button onto the stage.
 4. Open the Button's editor and select the new Hollow button type provided by this example.
+5. Create the matching CSS for your button type in your storefront theme as explained below.
 
-## Storefront theme
+## Create matching button type style for your storefront theme
 
-To see the custom button types render on your storefront, you will need to add the CSS from adminhtml (`_button.less`) to your own theme. For this example, we added a `_button.less` file to our own theme, as shown here:
+To see your custom button types render on your storefront as they do within the Admin stage, you need to add the CSS from adminhtml (`_button.less`) to your own theme. For this example, we added a `_button.less` file to our own theme, as shown here:
 
 ![Frontend Theme for button type](front-end-theme.png "Frontend Theme for Custom Button Types")
 
@@ -34,24 +35,13 @@ If you want to create something similar to complete this example, here's the `le
             box-shadow: none;
         }
 
-        &.pagebuilder-button-primary, &.pagebuilder-button-secondary,
-        &.pagebuilder-button-link, &.pagebuilder-button-hollow {
-            border-radius: 0;
-            -moz-border-radius: 0;
-            -webkit-border-radius: 0;
+        &.pagebuilder-button-hollow {
             font-size: 16px;
             font-weight: 600;
             line-height: 1.42;
             font-family: Poppins, sans-serif;
             padding: 14px 36px;
             cursor: pointer;
-
-            &:hover {
-                border: none;
-            }
-        }
-
-        &.pagebuilder-button-hollow {
             border: 2px solid #333333;
             padding: 20px 36px 16px 36px;
             margin: 30px 0 10px 0;
@@ -61,24 +51,6 @@ If you want to create something similar to complete this example, here's the `le
             &:hover {
                 background: #DDDDDD;
                 border: 2px solid #333333;
-            }
-        }
-
-        &.pagebuilder-button-primary {
-            border: none;
-            background: #1979C3;
-
-            &:hover {
-                background: #025FA7;
-            }
-        }
-
-        &.pagebuilder-button-secondary {
-            border: none;
-            background: #F0F0F0;
-
-            &:hover {
-                background: #DDDDDD;
             }
         }
     }
