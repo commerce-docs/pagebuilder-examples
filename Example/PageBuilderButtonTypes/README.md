@@ -1,6 +1,6 @@
 # Magento Page Builder - Custom Button Types
 
-This is an example module for creating custom button types for all Page Builder content types that use buttons: Button, Banner, and Slide.
+In this example, we create a custom button type called Hollow. You can use this same pattern to create your own custom button types for all Page Builder content types that use buttons: Button, Banner, and Slide.
 
 ![Custom Button Types](custom-button-types.gif "Custom Button Types")
 
