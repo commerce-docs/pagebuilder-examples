@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+    <type name="example_countdown"
+          label="Countdown"
+          menu_section="media"
+          component="Magento_PageBuilder/js/content-type"
+          preview_component="Example_PageBuilderCountdown/js/content-type/example-countdown/preview"
+          form="pagebuilder_example_countdown_form"
+          icon="icon-pagebuilder-countdown"
+          sortOrder="61"
+          translate="label">
+        <children default_policy="deny"/>
+        <appearances>
+            <appearance name="default"
+                        default="true"
+                        preview_template="Example_PageBuilderCountdown/content-type/example-countdown/default/preview"
+                        master_template="Example_PageBuilderCountdown/content-type/example-countdown/default/master"
+                        reader="Magento_PageBuilder/js/master-format/read/configurable">
+                <elements>
+                    <element name="main">
+                        <style name="text_align" source="text_align"/>
+                        <style name="border" source="border_style" converter="Magento_PageBuilder/js/converter/style/border-style"/>
+                        <style name="border_color" source="border_color"/>
+                        <style name="border_width" source="border_width" converter="Magento_PageBuilder/js/converter/style/border-width"/>
+                        <style name="border_radius" source="border_radius" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
+                        <style name="margins" storage_key="margins_and_padding" reader="Magento_PageBuilder/js/property/margins" converter="Magento_PageBuilder/js/converter/style/margins"/>
+                        <style name="padding" storage_key="margins_and_padding" reader="Magento_PageBuilder/js/property/paddings" converter="Magento_PageBuilder/js/converter/style/paddings"/>
+                        <style name="display" source="display" converter="Magento_PageBuilder/js/converter/style/display" preview_converter="Magento_PageBuilder/js/converter/style/preview/display"/>
+                        <attribute name="name" source="data-content-type"/>
+                        <attribute name="appearance" source="data-appearance"/>
+                        <css name="css_classes"/>
+                    </element>
+                    <element name="countdown_target">
+                        <attribute name="target_date" source="target_date"/>
+                    </element>
+                </elements>
+            </appearance>
+        </appearances>
+    </type>
+</config>
