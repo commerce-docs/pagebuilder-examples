@@ -3,8 +3,6 @@
  * See COPYING.txt for license details.
  */
 
-// import setCountdownField from 'Magento_PageBuilderCountdown/js/content-type/example-countdown/countdown';
-
 define([
     'knockout',
     'Magento_PageBuilder/js/content-type/preview',
@@ -44,7 +42,7 @@ define([
             target = preview.data.countdown_target.attributes()['target_date'];
         }
 
-        this.setCountdownField(target, countdownField, this.intervalId);
+        setCountdownField(target, countdownField, this.intervalId);
     };
 
     return Preview;
