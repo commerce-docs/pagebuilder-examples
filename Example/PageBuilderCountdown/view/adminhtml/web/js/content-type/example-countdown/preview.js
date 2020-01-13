@@ -32,7 +32,7 @@ define([
      */
     Preview.prototype.populateCountdown = function populateCountdown(preview) {
         let target = '';
-        let countdownField = document.querySelector(`#${preview.contentType.id} .countdown-field`);
+        let countdownField = document.querySelector('#' + preview.contentType.id + ' .countdown-field');
 
         if (!countdownField) {
             return;
@@ -42,7 +42,7 @@ define([
             target = preview.data.countdown_target.attributes()['target_date'];
         }
 
-        setCountdownField(target, countdownField, this.intervalId);
+        this.setCountdownField(target, countdownField, this.intervalId);
     };
 
     return Preview;

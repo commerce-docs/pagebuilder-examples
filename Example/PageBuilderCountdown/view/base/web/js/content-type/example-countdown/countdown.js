@@ -5,6 +5,10 @@
 
 /**
  * Sets the countdown fields with remaining time
+ *
+ * @param {string} target The date we are counting down to
+ * @param {Element} countdownField The countdown timer DOM Element
+ * @param {number} intervalId ID of the process to update the countdown timer
  */
 function setCountdownField(target, countdownField, intervalId) {
     if (!target || target === '') {
