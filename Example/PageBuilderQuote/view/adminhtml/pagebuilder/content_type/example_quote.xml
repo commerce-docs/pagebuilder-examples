@@ -34,21 +34,14 @@
                         <css name="css_classes"/>
                     </element>
                     <element name="quote">
-                        <style name="text_align" source="text_align"/>
-                        <html name="quote_text" converter="Magento_PageBuilder/js/converter/html/tag-escaper"/>
-                        <css name="quote_css">
-                            <filter>
-                                <class source="quote-content"/>
-                            </filter>
-                        </css>
+                        <html name="quote" converter="Magento_PageBuilder/js/converter/html/tag-escaper"/>
+                        <css name="quote-color"/>
                     </element>
                     <element name="author">
-                        <style name="text_align" source="text_align"/>
-                        <html name="quote_author" converter="Magento_PageBuilder/js/converter/html/tag-escaper"/>
+                        <html name="author" converter="Magento_PageBuilder/js/converter/html/tag-escaper"/>
                     </element>
-                    <element name="author_title">
-                        <style name="text_align" source="text_align"/>
-                        <html name="quote_author_desc" preview_converter="Magento_PageBuilder/js/converter/html/directive"/>
+                    <element name="description">
+                        <html name="description" preview_converter="Magento_PageBuilder/js/converter/html/directive"/>
                     </element>
                 </elements>
                 <converters>

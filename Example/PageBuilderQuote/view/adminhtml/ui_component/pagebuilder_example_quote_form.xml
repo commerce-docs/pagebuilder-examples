@@ -68,63 +68,26 @@
         <settings>
             <label/>
         </settings>
-        <field name="quote_text" sortOrder="10" formElement="textarea">
+        <field name="quote" sortOrder="10" formElement="textarea">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="source" xsi:type="string">page</item>
                 </item>
             </argument>
             <settings>
-                <dataScope>quote_text</dataScope>
+                <dataScope>quote</dataScope>
                 <dataType>text</dataType>
                 <label translate="true">Quote</label>
             </settings>
         </field>
-        <field name="quote_author" sortOrder="20" formElement="input">
+         <field name="quote-color" sortOrder="15" formElement="select">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="source" xsi:type="string">page</item>
                 </item>
             </argument>
             <settings>
-                <dataScope>quote_author</dataScope>
-                <dataType>text</dataType>
-                <label translate="false">Author</label>
-            </settings>
-        </field>
-        <field name="quote_author_desc" sortOrder="30" formElement="wysiwyg">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="source" xsi:type="string">page</item>
-                    <item name="wysiwygConfigData" xsi:type="array">
-                        <item name="is_pagebuilder_enabled" xsi:type="boolean">false</item>
-                        <item name="toggle_button" xsi:type="boolean">false</item>
-                    </item>
-                </item>
-            </argument>
-            <settings>
-                <additionalClasses>
-                    <class name="admin__field-wide">true</class>
-                </additionalClasses>
-                <label translate="true">Author Description</label>
-                <dataScope>quote_author_desc</dataScope>
-            </settings>
-            <formElements>
-                <wysiwyg>
-                    <settings>
-                        <wysiwyg>true</wysiwyg>
-                    </settings>
-                </wysiwyg>
-            </formElements>
-        </field>
-        <field name="quote_css" sortOrder="40" formElement="select">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="source" xsi:type="string">page</item>
-                </item>
-            </argument>
-            <settings>
-                <dataScope>quote_css</dataScope>
+                <dataScope>quote-color</dataScope>
                 <dataType>text</dataType>
                 <label translate="true">Quote Color</label>
             </settings>
@@ -157,6 +120,44 @@
                 </select>
             </formElements>
         </field>
+        <field name="author" sortOrder="20" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">page</item>
+                </item>
+            </argument>
+            <settings>
+                <dataScope>author</dataScope>
+                <dataType>text</dataType>
+                <label translate="false">Author</label>
+            </settings>
+        </field>
+        <field name="description" sortOrder="30" formElement="wysiwyg">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">page</item>
+                    <item name="wysiwygConfigData" xsi:type="array">
+                        <item name="is_pagebuilder_enabled" xsi:type="boolean">false</item>
+                        <item name="toggle_button" xsi:type="boolean">false</item>
+                    </item>
+                </item>
+            </argument>
+            <settings>
+                <additionalClasses>
+                    <class name="admin__field-wide">true</class>
+                </additionalClasses>
+                <label translate="true">Quote Description</label>
+                <dataScope>description</dataScope>
+            </settings>
+            <formElements>
+                <wysiwyg>
+                    <settings>
+                        <wysiwyg>true</wysiwyg>
+                    </settings>
+                </wysiwyg>
+            </formElements>
+        </field>
+
     </fieldset>
     <fieldset name="background" sortOrder="30" />
 </form>

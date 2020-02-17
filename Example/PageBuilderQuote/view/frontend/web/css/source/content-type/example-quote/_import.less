@@ -1,6 +1,6 @@
 // Content type's base styling
 & when (@media-common = true) {
-    blockquote {
+    div.quote {
         display: block;
         font-size: 1.3em;
         margin: 1em;
@@ -32,7 +32,6 @@
 
     div {
         &.quote-author {
-            text-align: left;
             padding-right: 30px;
             font-size: 14px;
             color: #666;
@@ -40,7 +39,6 @@
         }
 
         &.quote-description {
-            text-align: left;
             padding-right: 30px;
             font-size: 14px;
             color: #999;
@@ -49,7 +47,8 @@
         }
     }
 
-    // Content type's CSS classes for end-user styling options
+    /* Content type's CSS classes for end-user styling options */
+
     .black-quote {
         color: #333333;
 
