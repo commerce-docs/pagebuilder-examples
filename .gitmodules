@@ -1,6 +1,6 @@
 [submodule "PageBuilderMultipleStyles"]
 	path = PageBuilderMultipleStyles
-	url = git@github.com:magento-devdocs/pagebuilder-examples.git
+	url = git@github.com:magento-devdocs/PageBuilderMultipleStyles.git
 [submodule "PageBuilderQuote"]
 	path = PageBuilderQuote
 	url = git@github.com:magento-devdocs/PageBuilderQuote.git
