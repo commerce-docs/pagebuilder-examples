@@ -4,3 +4,6 @@
 [submodule "PageBuilderQuote"]
 	path = PageBuilderQuote
 	url = git@github.com:magento-devdocs/PageBuilderQuote.git
+[submodule "PageBuilderStylingWithAttributes"]
+	path = PageBuilderStylingWithAttributes
+	url = git@github.com:magento-devdocs/PageBuilderStylingWithAttributes.git
