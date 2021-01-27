@@ -1,0 +1,73 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+
+// ADMIN TEXT STYLES:
+//
+//  Note the extensive use of Page Builder's CSS override pattern.
+//
+//  ________________________________________________________________________________
+
+#html-body .desktop-viewport {
+    [data-content-type="text"] {
+        & > div {
+            // Override Page Builder's internal Text styles (from editor/user settings)
+            padding-right: 20px;
+        }
+
+        p {
+            // Override paragraph styling of Text for this viewport
+            font-size: 38px;
+            line-height: 64px;
+            font-weight: 100;
+            margin-bottom: 46px;
+        }
+    }
+}
+
+#html-body .tablet-viewport {
+    [data-content-type="text"] {
+       & > div {
+           padding-right: 10px;
+       }
+
+       p {
+           font-size: 30px;
+           line-height: 51px;
+           font-weight: 100;
+           margin-bottom: 36px;
+        }
+    }
+}
+
+#html-body .mobile-viewport {
+    [data-content-type="text"] {
+        & > div {
+            padding-right: 5px;
+        }
+
+        p {
+            font-size: 23px;
+            line-height: 39px;
+            font-weight: 100;
+            margin-bottom: 26px;
+        }
+    }
+}
+
+#html-body .mobile-small-viewport {
+    [data-content-type="text"] {
+        & > div {
+            padding-right: 0;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 32px;
+            font-weight: 100;
+            margin-bottom: 20px;
+        }
+    }
+}

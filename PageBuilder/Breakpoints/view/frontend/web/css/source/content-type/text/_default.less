@@ -1,0 +1,65 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+// FRONTEND TEXT STYLES:
+//
+//  ________________________________________________________________________________
+
+& when (@media-common = true) {
+
+    @media (min-width: 1024px) {
+        #html-body div[data-content-type="text"] {
+            // Override Page Builder's internal Text styles (from editor/user settings)
+            padding-right: 20px;
+
+            p {
+                // Override paragraph styling of Text for this viewport
+                font-size: 38px;
+                line-height: 64px;
+                font-weight: 100;
+                margin-bottom: 46px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        #html-body div[data-content-type="text"] {
+            padding-right: 10px;
+
+            p {
+                font-size: 30px;
+                line-height: 51px;
+                font-weight: 100;
+                margin-bottom: 36px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        #html-body div[data-content-type="text"] {
+            padding-right: 5px;
+
+            p {
+                font-size: 23px;
+                line-height: 39px;
+                font-weight: 100;
+                margin-bottom: 26px;
+            }
+        }
+    }
+
+    @media (max-width: 540px) {
+        #html-body div[data-content-type="text"] {
+            padding-right: 0;
+
+            p {
+                font-size: 19px;
+                line-height: 32px;
+                font-weight: 100;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

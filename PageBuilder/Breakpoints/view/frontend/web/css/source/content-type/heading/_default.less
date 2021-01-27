@@ -1,0 +1,54 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+// FRONTEND STYLES FOR COLUMN / COLUMN-GROUP:
+//
+//  Both column and column-group styles are included here for convenience.
+//  These styles are scoped to the breakpoints using media queries.
+//  Simple flexbox styling is used to make Page Builder's existing
+//  columns and column-groups as responsiveness and flexible as possible.
+//
+//  Note the extensive use of Page Builder's CSS override pattern.
+//
+//  ________________________________________________________________________________
+
+& when (@media-common = true) {
+
+    @media (min-width: 1025px) {
+        #html-body h1[data-content-type="heading"] {
+            font-size: 56px;
+            line-height: 81px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        #html-body h1[data-content-type="heading"] {
+            font-size: 40px;
+            line-height: 61px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #html-body h1[data-content-type="heading"] {
+            font-size: 30px;
+            line-height: 51px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 540px) {
+        #html-body h1[data-content-type="heading"] {
+            font-size: 24px;
+            line-height: 41px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+}
