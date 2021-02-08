@@ -5,7 +5,6 @@
  * See COPYING.txt for license details.
  */
 -->
-
 <!--
 WIDGET REFERENCES:
 
@@ -14,9 +13,16 @@ Points to the column and column-group widgets that provide the flexbox hack to m
 to the custom breakpoint property called columnsPerRow.
 
 -->
-
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Admin theme -->
+    <type name="Magento\Theme\Model\View\Design">
+        <arguments>
+            <argument name="themes" xsi:type="array">
+                <item name="adminhtml" xsi:type="string">PageBuilder/AdminTheme</item>
+            </argument>
+        </arguments>
+    </type>
     <type name="Magento\PageBuilder\Model\WidgetInitializerConfig">
         <arguments>
             <argument name="config" xsi:type="array">

@@ -105,8 +105,8 @@ define([
 
         events.on('stage:viewportChangeAfter', function (args) {
             var breakpoint = config.breakpoints[args.viewport];
-
             initSlider($element, slickConfig, breakpoint);
-        });
+            events.off('stage:viewportChangeAfter');
+        }, 'stage:viewportChangeAfter');
     };
 });

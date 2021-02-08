@@ -5,14 +5,12 @@
  * See COPYING.txt for license details.
  */
 -->
-
 <!--
 FORM FOR TABLET BREAKPOINT:
 
 TODO: Add a cool field that allows users to enter a value to use for the tablet breakpoint defined.
 
 -->
-
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd" extends="pagebuilder_column_form">
     <argument name="data" xsi:type="array">
         <item name="js_config" xsi:type="array">
@@ -52,12 +50,12 @@ TODO: Add a cool field that allows users to enter a value to use for the tablet 
             <settings>
                 <additionalClasses>
                     <class name="admin__field-min-height-mobile">true</class>
-                    <class name="admin__field-min-height">true</class>
+                    <class name="admin__field-min-height-tablet">true</class>
                 </additionalClasses>
                 <tooltip>
                     <description translate="true">
                         <![CDATA[
-                        <p>Style changes will only affect this breakpoint</p>
+                        <p>Setting applies to the <strong>tablet</strong> breakpoint</p>
                         ]]>
                     </description>
                 </tooltip>
@@ -65,4 +63,3 @@ TODO: Add a cool field that allows users to enter a value to use for the tablet 
         </field>
     </fieldset>
 </form>
-

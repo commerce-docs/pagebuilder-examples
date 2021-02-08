@@ -3,8 +3,8 @@
  * See COPYING.txt for license details.
  */
 
-const tsDirectory = 'app/code/PageBuilder/PageBuilderBreakpoints/view/adminhtml/web/ts/';
-const moduleName = 'Vendor_PageBuilderAdmin';
+const tsDirectory = 'app/code/PageBuilder/Breakpoints/view/adminhtml/web/ts/';
+const moduleName = 'PageBuilder_Breakpoints';
 
 module.exports = {
     passPerPreset: true,

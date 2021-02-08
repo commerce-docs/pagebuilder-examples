@@ -31,7 +31,7 @@ here along with the other built-in properties for the breakpoints.
                 <var name="label">Tablet</var>
                 <var name="stage">true</var>
                 <var name="default">false</var>
-                <var name="class">mobile-switcher</var>
+                <var name="class">tablet-switcher</var>
                 <var name="icon">PageBuilder_Breakpoints::css/images/switcher/switcher-tablet.svg</var>
                 <var name="media">only screen and (max-width: 1024px)</var>
                 <var name="conditions">
@@ -65,7 +65,7 @@ here along with the other built-in properties for the breakpoints.
             <var name="mobile-small">
                 <var name="label">Mobile Small</var>
                 <var name="stage">true</var>
-                <var name="class">mobile-switcher</var>
+                <var name="class">mobile-small-switcher</var>
                 <var name="icon">PageBuilder_Breakpoints::css/images/switcher/switcher-mobile-small.svg</var>
                 <var name="media">only screen and (max-width: 640px)</var>
                 <var name="conditions">
