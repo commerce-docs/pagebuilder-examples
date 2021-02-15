@@ -1,12 +1,7 @@
-[data-content-type="banner"][data-appearance="simple-poster"] {
-    h1 {
-        margin: 0 !important;
+& when (@media-common = true) {
+  #html-body [data-content-type='banner'][data-appearance='collage-left'] {
+    .pagebuilder-banner-wrapper {
+      overflow: scroll;
     }
-    .pagebuilder-banner-wrapper .pagebuilder-poster-overlay {
-        justify-content: left;
-    }
-
-    .pagebuilder-simple-poster-content {
-        align-self: flex-end;
-    }
+  }
 }

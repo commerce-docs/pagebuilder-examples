@@ -3,27 +3,7 @@
     <type name="banner">
         <appearances>
             <appearance name="collage-left">
-                <elements>
-                    <element name="wrapper">
-                        <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
-                    </element>
-                </elements>
-            </appearance>
-            <appearance name="collage-right">
-                <elements>
-                    <element name="wrapper">
-                        <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
-                    </element>
-                </elements>
-            </appearance>
-            <appearance name="poster">
-                <elements>
-                    <element name="wrapper">
-                        <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
-                    </element>
-                </elements>
-            </appearance>
-            <appearance name="collage-centered">
+                <form>example_ext_pagebuilder_banner_form</form>
                 <elements>
                     <element name="wrapper">
                         <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
