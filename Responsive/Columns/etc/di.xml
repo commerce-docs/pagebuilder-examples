@@ -18,7 +18,7 @@ to the custom breakpoint property called columnsPerRow.
     <type name="Magento\Theme\Model\View\Design">
         <arguments>
             <argument name="themes" xsi:type="array">
-                <item name="adminhtml" xsi:type="string">Responsive/ColumnsTheme</item>
+                <item name="adminhtml" xsi:type="string">ResponsiveTheme/Admin</item>
             </argument>
         </arguments>
     </type>
