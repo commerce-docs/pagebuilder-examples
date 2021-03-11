@@ -23,7 +23,10 @@ It does quite a bit. I'll add all the details soon. But until then, you can read
 1. Allows you to set the number of columns per row you want to show for a breakpoint/viewport.
 1. Allows you to hide specific columns for a breakpoint/viewport.
 
-This GIF shows how the column sizes can be set on the desktop viewport, and how the mobile viewport (max-width: 768px) keeps the column ratios in a 2-column format. It also shows how columns can be hidden for a breakpoint. The tablet viewport is configured to hide the 4th column. All other viewports show all columns.
+This GIF shows:
+
+- How the mobile viewport (max-width: 768px) keeps the desktop column ratios in a 2-column format.
+- How columns can be hidden for viewports/breakpoints. The tablet viewport is configured to hide the 4th column. All other viewports show all columns.
 
 ![Demo of column control](ColumnsPerRowAndColumnHiding.gif "Columns per row and column hiding")
 
