@@ -1,0 +1,18 @@
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Using Page Builder style-override pattern to add custom tablet font icon.
+//  ________________________________________________________________________________
+
+#html-body {
+    .admin__field-min-height-tablet {
+        .admin__field-tooltip-action {
+            &:before {
+                content: @icon-breakpoint-tablet__content;
+                font-family: @breakpoint-icon-font;
+            }
+        }
+    }
+}

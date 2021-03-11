@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<!--
+EXTENDED COLUMN-GROUP CONFIG:
+
+Points to a custom preview component that controls the responsive behavior of columns.
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+    <type name="column-group" preview_component="Responsive_Columns/js/content-type/column-group/preview">
+    </type>
+</config>

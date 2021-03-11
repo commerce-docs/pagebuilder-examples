@@ -1,0 +1,98 @@
+// /** /** /** /** /** /** /** /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+// ADMIN COLUMN / COLUMN-GROUP STYLES:
+//
+//  Both column and column-group styles are included here for convenience.
+//  These styles are scoped to the stage viewports using Page Builder's viewport naming
+//  conventions. Simple flexbox styling is put to full use here to achieve the
+//  goal of making column responsiveness flexible.
+//
+//  Note the extensive use of Page Builder's CSS override pattern.
+//
+//  ________________________________________________________________________________
+
+//
+//  Common styles across viewports
+//  ____________________________________________________
+
+#html-body .pagebuilder-column-group > .element-children {
+    display: flex;
+}
+
+#html-body .pagebuilder-column[data-content-type='column'] {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+//  Desktop viewport
+//  _____________________________________________
+
+#html-body .desktop-viewport .pagebuilder-column-group > .element-children {
+    flex-wrap: nowrap;
+}
+
+//  Tablet viewport
+//  _____________________________________________
+
+#html-body .tablet-viewport .pagebuilder-grid-size-indicator {
+    display: none;
+}
+
+#html-body .tablet-viewport .pagebuilder-column-group > .element-children {
+    flex-wrap: wrap;
+}
+
+//  Mobile viewport
+//  _____________________________________________
+
+#html-body .mobile-viewport .pagebuilder-grid-size-indicator {
+    display: none;
+}
+
+#html-body .mobile-viewport .pagebuilder-column-group > .element-children {
+    flex-wrap: wrap;
+}
+
+//  Mobile-small viewport styles
+//  _____________________________________________
+
+#html-body .mobile-small-viewport .pagebuilder-grid-size-indicator {
+    display: none;
+}
+
+#html-body .mobile-small-viewport .pagebuilder-column-group > .element-children {
+    flex-wrap: wrap;
+}
+
+#html-body .mobile-small-viewport .pagebuilder-column[data-content-type='column'] {
+    background-attachment: scroll !important;
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+//  HACK: Style applied to the <hr> element inserted
+//  in the DOM only once at runtime on column load.
+//  _____________________________________________
+
+hr {
+    display: none;
+    height: 0;
+    margin: 0;
+    border: 0;
+
+    &.break {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
+//
+//  Class assigned in Column Group's preview.ts to hide columns at viewports in the admin
+//
+.hide {
+    display: none !important;
+}

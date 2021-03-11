@@ -1,0 +1,86 @@
+// FRONTEND COLUMN / COLUMN-GROUP STYLES:
+//
+//  Both column and column-group styles are included here for convenience.
+//  These styles are scoped to the breakpoints using media queries.
+//  Simple flexbox styling is used to make Page Builder's existing
+//  columns and column-groups as responsiveness and flexible as possible.
+//
+//  Note the extensive use of Page Builder's CSS override pattern.
+//
+//  ________________________________________________________________________________
+
+& when (@media-common = true) {
+    #html-body .pagebuilder-column[data-content-type='column'] {
+        flex-grow: 1;
+    }
+
+    #html-body .pagebuilder-column-group[data-content-type='column-group'] hr {
+        display: none;
+        height: 0;
+        margin: 0;
+        border: 0;
+
+        &.break {
+            display: block;
+            flex-basis: 100%;
+        }
+    }
+
+    //
+    //  desktop / default viewport styles
+    //  _____________________________________________
+
+    @media only screen and (min-width: 1024px) {
+        #html-body .pagebuilder-column-group[data-content-type='column-group'] {
+            flex-wrap: nowrap;
+        }
+    }
+
+    //
+    //  Tablet viewport
+    //  _____________________________________________
+
+    @media only screen and (max-width: 1024px) {
+        #html-body .pagebuilder-column-group[data-content-type='column-group'] {
+            flex-wrap: wrap;
+        }
+    }
+
+    //
+    //  Mobile viewport
+    //  _____________________________________________
+
+    @media only screen and (max-width: 768px) {
+        #html-body .pagebuilder-column-group[data-content-type='column-group'] {
+            flex-wrap: wrap;
+        }
+
+        #html-body .pagebuilder-column[data-content-type='column'] {
+            flex-basis: auto;
+            max-width: 100%;
+        }
+    }
+
+    //
+    //  mobile-small viewport styles
+    //  _____________________________________________
+
+    @media only screen and (max-width: 640px) {
+        #html-body .pagebuilder-column-group[data-content-type='column-group'] {
+            flex-wrap: wrap;
+        }
+
+        #html-body .pagebuilder-column[data-content-type='column'] {
+            background-attachment: scroll !important;
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    //
+    //  Class assigned in widget.js to hide columns at breakpoints on the frontend
+    //
+    .hide {
+        display: none !important;
+    }
+}
