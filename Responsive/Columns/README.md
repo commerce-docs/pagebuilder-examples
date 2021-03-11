@@ -4,13 +4,13 @@ This module provides a Page Builder example module that shows how to use breakpo
 
 ## Installation
 
+1. Install the [ResponsiveTheme](../../ResponsiveTheme/README.md). It adds a critical fix to the mobile viewport.
+
 1. Add this module to the `app/code/` directory in your Magento instance.
 
     ![Responsive Columns Module](responsive-columns-module.png)
 
 1. Run `bin/magento setup:upgrade` to install it.
-
-As shown, make sure you also install the `ResponsiveTheme` module.
 
 ## What it does
 
