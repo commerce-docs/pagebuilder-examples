@@ -6,7 +6,7 @@ This admin theme is only required for the Responsive_Columns module because it f
 
 1. Add this theme to the `design/adminhtml` directory in your Magento instance.
 
-    ![Responsive Admin Theme](responsive-admin-them.png)
+    ![Responsive Admin Theme](responsive-admin-theme.png)
 
 1. Run `bin/magento setup:upgrade` to install it.
 
