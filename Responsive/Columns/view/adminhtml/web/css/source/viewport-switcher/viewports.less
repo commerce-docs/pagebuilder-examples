@@ -1,0 +1,46 @@
+// /** /** /** /** /** /** /** /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+// ADMIN STAGE STYLES:
+//
+//  These styles control the width of the stage canvas when switching to the
+//  additional tablet and mobile-small viewports.
+//
+//  STAY ALERT!
+//  The max-width properties defined here should match the widths defined
+//  in the view.xml configuration and the media queries in your frontend stylesheets.
+//  If they don't match, your stage previews will NOT match what users see on
+//  the frontend.
+//  ________________________________________________________________________________
+
+.tablet-viewport {
+    &.pagebuilder-stage-wrapper {
+        &.stage-content-snapshot,
+        &.stage-full-screen {
+            .pagebuilder-stage {
+                .pagebuilder-canvas {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: 1024px;
+                }
+            }
+        }
+    }
+}
+
+.mobile-small-viewport {
+    &.pagebuilder-stage-wrapper {
+        &.stage-content-snapshot,
+        &.stage-full-screen {
+            .pagebuilder-stage {
+                .pagebuilder-canvas {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: 640px;
+                }
+            }
+        }
+    }
+}

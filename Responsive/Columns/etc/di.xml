@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!--
+WIDGET REFERENCES:
+
+Points to the products widget that fixes the custom breakpoint issue. See the referenced widget for comments.
+Points to the column and column-group widgets that provide the flexbox hack to make columns wrap according
+to the custom breakpoint property called columnsPerRow.
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<!-- Admin theme -->
+    <type name="Magento\Theme\Model\View\Design">
+        <arguments>
+            <argument name="themes" xsi:type="array">
+                <item name="adminhtml" xsi:type="string">Responsive/ColumnsTheme</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\PageBuilder\Model\WidgetInitializerConfig">
+        <arguments>
+            <argument name="config" xsi:type="array">
+                <item name="products" xsi:type="array">
+                    <item name="default" xsi:type="array">
+                        <item name="component" xsi:type="string">Responsive_Columns/js/content-type/products/appearance/carousel/widget</item>
+                    </item>
+                </item>
+                <item name="column-group" xsi:type="array">
+                    <item name="default" xsi:type="array">
+                        <item name="component" xsi:type="string">Responsive_Columns/js/content-type/column-group/appearance/default/widget</item>
+                    </item>
+                </item>
+                <item name="column" xsi:type="array">
+                    <item name="default" xsi:type="array">
+                        <item name="component" xsi:type="string">Responsive_Columns/js/content-type/column/appearance/default/widget</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
