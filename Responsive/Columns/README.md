@@ -25,7 +25,7 @@ It does quite a bit. I'll add all the details soon. But until then, you can read
 
 ### Known limitations (so far)
 
-If you hide certain columns, it can change the `columnsPerRow` layouts. For example, a mobile layout with `columnsPerRow` set to `2`, appears as a single column when you set the `columnToHide` (yes, bad name) to `1,4` (meaning hide columns number `1` and `4`). This happens because the flexbox wrapping flows from left to right, so columns `2` and `3` are on two different rows.
+If you hide certain columns, it can change the `columnsPerRow` layouts. For example, a mobile layout with `columnsPerRow` set to `2`, appears as a single column when you set the `columnToHide` (yes, bad name) to `1,4` (meaning hide columns number `1` and `4`). This happens because the flexbox wrapping flows from left to right, so column `2` is on the first row and column `3` is on the second row.
 
 ```xml
 <var name="mobile">
