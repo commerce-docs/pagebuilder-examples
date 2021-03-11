@@ -16,8 +16,10 @@ This module provides a Page Builder example module that shows how to use breakpo
 
 It does quite a bit. I'll add all the details soon. But until then, you can read the comments within the module files to get a pretty good idea of what's going on. Some code is only there to fix bugs in 1.6.0. If that's the case, I point it out in the comments. A good example is the `StageConfigFix` plugin. This fixes a configuration bug with the `stage` configuration for viewports.
 
-**Two main features:**
+**Four main features:**
 
+1. Adds Tablet and a Mobile Small viewports to the default viewports (desktop and mobile).
+1. Provides workarounds for four bugs in the latest release 1.6.0.
 1. Allows you to set the number of columns per row you want to show for a breakpoint/viewport.
 1. Allows you to hide specific columns for a breakpoint/viewport.
 
