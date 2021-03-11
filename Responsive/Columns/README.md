@@ -14,7 +14,7 @@ This module provides a Page Builder example module that shows how to use breakpo
 
 ## What it does
 
-It does quite a bit. I'll add all the details soon. But until then, you can read the comments within the module files to get a pretty good idea of the things it does. Some code is only there to fix bugs in 1.6.0. A good example is the `StageConfigFix` plugin. This fixes a configuration bug with the `stage` configuration for viewports.
+It does quite a bit. I'll add all the details soon. But until then, you can read the comments within the module files to get a pretty good idea of what's going on. Some code is only there to fix bugs in 1.6.0. If that's the case, I let you know. A good example is the `StageConfigFix` plugin. This fixes a configuration bug with the `stage` configuration for viewports.
 
 **Two main features:**
 
