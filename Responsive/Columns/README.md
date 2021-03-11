@@ -23,6 +23,25 @@ It does quite a bit. I'll add all the details soon. But until then, you can read
 1. Allows you to set the number of columns per row you want to show for a breakpoint/viewport.
 1. Allows you to hide specific columns for a breakpoint/viewport.
 
+### Known limitations (so far)
+
+If you hide certain columns, it can change the `columnsPerRow` layouts. For example, a mobile layout with `columnsPerRow` set to `2`, appears as a single column when you set the `columnToHide` (yes, bad name) to `1,4` (meaning hide columns number `1` and `4`). This happens because the flexbox wrapping flows from left to right, so columns `2` and `3` are on two different rows.
+
+```xml
+<var name="mobile">
+    <var name="label">Mobile</var>
+    ...
+    <var name="options">
+        <var name="columns">
+            <var name="default">
+                <var name="columnsPerRow">2</var>
+                <var name="columnToHide">1,4</var>
+            </var>
+        </var>
+    </var>
+</var>
+```
+
 This GIF shows:
 
 - How the mobile viewport (max-width: 768px) keeps the desktop column ratios in a 2-column format.
