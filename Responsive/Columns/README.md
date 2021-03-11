@@ -14,4 +14,15 @@ As shown, make sure you also install the `ResponsiveTheme` module.
 
 ## What it does
 
-It does quite a bit. I'll add all the details soon. But until then, you can read the comments within the module files to get a pretty good idea of the things it does. Some code is only there to fix bugs in 1.6.0. A good example is the `StageConfigFix` plugin. This fixes a configuration bug with the `stage` configuration for viewports. More to come.
+It does quite a bit. I'll add all the details soon. But until then, you can read the comments within the module files to get a pretty good idea of the things it does. Some code is only there to fix bugs in 1.6.0. A good example is the `StageConfigFix` plugin. This fixes a configuration bug with the `stage` configuration for viewports.
+
+**Two main features:**
+
+1. Allows you to set the number of columns per row you want to show for a breakpoint/viewport.
+1. Allows you to hide specific columns for a breakpoint/viewport.
+
+This GIF shows how the column sizes can be set on the desktop viewport, and how the mobile viewport (max-width: 768px) keeps the column ratios in a 2-column format. It also shows how columns can be hidden for a breakpoint. The tablet viewport is configured to hide the 4th column. All other viewports show all columns.
+
+![Demo of column control](ColumnsPerRowAndColumnHiding.gif "Columns per row and column hiding")
+
+More docs to come.
