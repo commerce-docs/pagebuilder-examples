@@ -6,9 +6,11 @@ This module provides a Page Builder example module that shows how to use breakpo
 
 1. Add this module to the `app/code/` directory in your Magento instance.
 
-    ![Responsive Columns Module](responsive-responsive-columns-module.png)
+    ![Responsive Columns Module](responsive-columns-module.png)
 
 1. Run `bin/magento setup:upgrade` to install it.
+
+As shown, make sure you also install the `ResponsiveTheme` module.
 
 ## What it does
 
