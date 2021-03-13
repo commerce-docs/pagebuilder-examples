@@ -1,0 +1,31 @@
+{
+  "name": "davemacaulay/module-page-builder-grid",
+  "description": "Example Page Builder Grid Module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-page-builder": "*",
+    "php": "~7.1.3||~7.2.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "proprietary"
+  ],
+  "authors": [
+    {
+      "name": "Dave Macaulay",
+      "email": "macaulay@adobe.com"
+    },
+    {
+      "name": "Hwashiang Yu",
+      "email": "hwyu@adobe.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "DaveMacaulay\\PageBuilderGrid\\": ""
+    }
+  }
+}

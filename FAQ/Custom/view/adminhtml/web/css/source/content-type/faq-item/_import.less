@@ -1,0 +1,89 @@
+//
+//  FAQ item styles
+//  _____________________________________________
+
+.pagebuilder-faq-item {
+    border: 1px solid #cccccc;
+
+    .placeholder-text {
+        left: 5px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+    }
+
+    .pagebuilder-faq-item-collapsible,
+    [data-role="collapsible"] {
+        font-weight: bold;
+        line-height: 1.1;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        &:before {
+            font-family: @icons-admin__font-name;
+            margin-right: 5px;
+            font-size: 12px;
+            left: 15px;
+            position: absolute;
+        }
+
+        &[aria-expanded="true"]:before {
+            content: @icon-caret-up__content;
+        }
+
+        &[aria-expanded="false"]:before {
+            content: @icon-caret-down__content;
+        }
+    }
+
+    [data-role="content"] {
+
+        figure .pagebuilder-image-uploader-container {
+            visibility: visible;
+
+            .pagebuilder-image-empty-preview {
+                background: inherit;
+                height: auto;
+                margin-top: 35px;
+            }
+        }
+    }
+
+    &.pagebuilder-content-type-active {
+        border: 1px solid #cccccc;
+    }
+
+    [data-role="content"] {
+        position: relative;
+    }
+
+    .mce-tinymce-inline {
+        left: -1px !important;
+        right: -1px;
+        z-index: 20;
+    }
+    > .mce-content-body {
+        min-height: 50px;
+        padding: 5px !important;
+    }
+    > .mce-edit-focus {
+        ~ .pagebuilder-options,
+        ~ .placeholder-text {
+            display: none;
+        }
+    }
+
+    .inline-wysiwyg-textarea {
+        border: 0;
+        margin: 2px 0;
+        min-height: 50px;
+        width: 100%;
+        padding: 5px;
+        resize: none;
+
+        &:focus {
+            resize: vertical;
+        }
+    }
+}

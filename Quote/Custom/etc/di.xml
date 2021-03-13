@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\PageBuilder\Model\WidgetInitializerConfig">
+        <arguments>
+            <argument name="config" xsi:type="array">
+                <item name="Quote_Custom" xsi:type="array">
+                <!-- Name is the appearance name -->
+                    <item name="default" xsi:type="array">
+                    <!--required argument-->
+                        <item name="component" xsi:type="string">Quote_Custom/js/content-type/custom-quote/appearance/default/widget</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
