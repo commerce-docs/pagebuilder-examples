@@ -10,7 +10,7 @@ The Page Builder team members created these modules to serve as examples for lea
 
 -  **[Banner_Appearance](Banner/Appearance/README.md)** — This module shows you how to add a new appearance to the Banner. This is the completed module featured in the documentation topic [Add appearances](https://devdocs.magento.com/page-builder/docs/content-types/extend/add-appearances.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
--  **[BaseForms_Extension](BaseForms/Extension/README.md)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Form_Extensions](BaseForms/Extension/README.md)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
 -  **[Button_Extension](Button/Extension/README.md)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
