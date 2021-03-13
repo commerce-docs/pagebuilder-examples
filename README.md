@@ -12,7 +12,7 @@ The Page Builder team members created these modules to serve as examples for lea
 
 -  **[BaseForms_Extension](BaseForms/Extension/README.md)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
--  **[Button_Types](Button/Types/README.md)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Button_Extension](Button/Types/README.md)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
 -  **[Columns_Extension](Columns/Extension/README.md)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
@@ -26,11 +26,11 @@ The Page Builder team members created these modules to serve as examples for lea
 
 ## Custom Modules
 
--  **[Quote_Custom](Quote/Custom/README.md)** — This module shows you how to create a content type for a customer testimonial. This is the completed Quote module featured in the documentation tutorial: [Creating content types](https://devdocs.magento.com/page-builder/docs/content-types/create/introduction.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Custom Quote](Quote/Custom/README.md)** — This module shows you how to create a content type for a customer testimonial. This is the completed Quote module featured in the documentation tutorial: [Creating content types](https://devdocs.magento.com/page-builder/docs/content-types/create/introduction.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
--  **[Grid_Custom](Grid/Custom/README.md)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
+-  **[Custom Homepage Grid](Grid/Custom/README.md)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
 
--  **[FAQ_Custom](FAQ/Custom/README.md)** — This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers. Created by [Igor Melnikov](https://github.com/melnikovi).
+-  **[Custom FAQ](FAQ/Custom/README.md)** — This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers. Created by [Igor Melnikov](https://github.com/melnikovi).
 
 ## Module Installation
 
