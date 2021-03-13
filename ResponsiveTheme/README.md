@@ -1,6 +1,6 @@
 # Responsive Admin Theme
 
-This admin theme is only required for the Responsive_Columns module because it fixes a Page Builder style that prevented the mobile breakpoint from having more than one column. Otherwise, there's no need to use an Admin theme to create responsive columns. But until the style fix is made, you can use this theme.
+This admin theme is only required for the Columns_Extension module because it fixes a Page Builder style that prevented the mobile breakpoint from having more than one column. Otherwise, there's no need to use an Admin theme to create responsive columns. But until the style fix is made, you can use this theme.
 
 ## Installation
 

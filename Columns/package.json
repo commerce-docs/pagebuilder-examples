@@ -1,0 +1,11 @@
+{
+    "name": "columns_extension",
+    "version": "1.0.0",
+    "description": "Columns extension to show you how to take responsive control of columns in Page Builder.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Bruce Denham",
+    "license": "ISC"
+}

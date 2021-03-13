@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<!--
+EXTENDED COLUMN CONFIG:
+
+Adds breakpoint-specific forms so users can add breakpoint specific values for a content type.
+The forms defined here allow us to make content types as responsive as we need, while allowing
+users to choose the property settings that will be applied to each breakpoint.
+
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+    <type name="column" preview_component="Columns_Extension/js/content-type/column/preview">
+        <breakpoints>
+            <breakpoint name="tablet">
+                <form>pagebuilder_column_tablet_form</form>
+            </breakpoint>
+            <breakpoint name="mobile-small">
+                <form>pagebuilder_column_mobile-small_form</form>
+            </breakpoint>
+        </breakpoints>
+    </type>
+</config>

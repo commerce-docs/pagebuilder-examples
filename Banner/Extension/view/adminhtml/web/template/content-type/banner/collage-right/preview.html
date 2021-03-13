@@ -1,0 +1,57 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<!--
+  By default, this template is not in use. If you need to override and use it, 
+  you must also change the appearance preview_template reference in the config file 
+  to point to THIS appearance template instead of the native Magento_PageBuilder template.
+-->
+
+<div class="pagebuilder-content-type pagebuilder-banner type-nested" attr="data.main.attributes" ko-style="data.main.style" css="data.main.css" event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template" />
+    <div class="pagebuilder-banner-wrapper"
+         attr="data.wrapper.attributes"
+         ko-style="data.wrapper.style"
+         css="Object.assign(data.wrapper.css(), {
+            'jarallax': data.wrapper.attributes()['data-background-type'] == 'video'
+            })"
+         event="{ mouseover: onMouseOverWrapper, mouseout: onMouseOutWrapper, mousedown: activateEditor }"
+         afterRender="initParallax">
+        <div if="data.video_overlay.attributes()['data-video-overlay-color']"
+             class="video-overlay"
+             attr="data.video_overlay.attributes"
+             ko-style="data.video_overlay.style" />
+        <scope args="getUploader().getUiComponent()">
+            <render />
+        </scope>
+        <div class="pagebuilder-overlay" attr="data.overlay.attributes" ko-style="data.overlay.style" css="data.overlay.css">
+            <div class="pagebuilder-collage-content" event="mousedown: activateEditor">
+                <div class="pagebuilder-banner-text-content">
+                    <div if="isWysiwygSupported()"
+                         class="inline-wysiwyg"
+                         ko-style="data.content.style"
+                         css="data.content.css"
+                         attr="data.content.attributes"
+                         afterRender="afterRenderWysiwyg"
+                         contenteditable="true"
+                         event="mousedown: stopEvent, click: activateEditor, dblclick: handleDoubleClick">
+                    </div>
+                    <div if="isWysiwygSupported()" class="placeholder-text" ifnot="data.content.html" translate="'Edit Banner Text'"></div>
+                    <textarea ifnot="isWysiwygSupported()" class="inline-wysiwyg-textarea" afterRender="initTextarea" event="{keyup: onTextareaKeyUp, focus: onTextareaFocus, blur: onTextareaBlur, mousedown: stopEvent}" attr="placeholder: $t('Edit Banner Text')"/>
+                </div>
+                <a if="data.main.attributes()['data-show-button'] !== 'never'"
+                   type="button"
+                   class="pagebuilder-banner-button"
+                   attr="data.button.attributes"
+                   ko-style="data.button.style"
+                   css="data.button.css">
+                    <span data-bind="liveEdit: { field: 'button_text', placeholder: buttonPlaceholder, selectAll: true }"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
