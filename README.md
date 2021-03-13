@@ -44,8 +44,6 @@ Install these example modules as you do any other Magento module:
     ln -s <Relative_route_to_repo_directory>
     ```
 
-    <img src="examples-install-location.png" alt="Examples installation directory" width="318px"/>
-
 1. Install and enable the example modules with the `setup:upgrade` command:
 
    ```bash
@@ -53,8 +51,6 @@ Install these example modules as you do any other Magento module:
    ```
 
 1. Navigate to CMS page to ensure the example content types appear in the Page Builder panel as shown here:
-
-   <img src="example-content-types.png" alt="Content type examples shown in panel" width="310px"/>
 
 ## Contributing
 
