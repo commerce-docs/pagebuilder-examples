@@ -2,8 +2,8 @@
 
 This example module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Page Builder uses two forms to provide fieldsets and fields to all its content types:
 
-* `Magento/PageBuilder/view/adminhtml/ui_component/pagebuilder_base_form.xml`
-* `Magento/PageBuilder/view/adminhtml/ui_component/pagebuilder_base_form_with_background_attributes.xml`
+*  `Magento/PageBuilder/view/adminhtml/ui_component/pagebuilder_base_form.xml`
+*  `Magento/PageBuilder/view/adminhtml/ui_component/pagebuilder_base_form_with_background_attributes.xml`
 
 The `pagebuilder_base_form.xml` provides the Advanced fieldset and all its fields (such as alignments, borders, margins and paddings).
 The `pagebuilder_base_form_with_background_attributes.xml` provides the Background fieldset and all its fields (such as background images, sizes, and positions).

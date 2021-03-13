@@ -25,11 +25,11 @@ The Page Builder team members created these modules to serve as examples for lea
 
 ## Custom Modules
 
--  **[Custom_Quote](Custom/Quote/README.md)** — This module shows you how to create a content type for a customer testimonial. This is the completed Quote module featured in the documentation tutorial: [Creating content types](https://devdocs.magento.com/page-builder/docs/content-types/create/introduction.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Quote_Custom](Custom/Quote/README.md)** — This module shows you how to create a content type for a customer testimonial. This is the completed Quote module featured in the documentation tutorial: [Creating content types](https://devdocs.magento.com/page-builder/docs/content-types/create/introduction.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
 
--  **[Custom_Grid](Custom/Grid/README.md)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
+-  **[Grid_Custom](Custom/Grid/README.md)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
 
--  **[Custom_FAQ](Custom/FAQ/README.md)** — This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers. Created by [Igor Melnikov](https://github.com/melnikovi).
+-  **[FAQ_Custom](Custom/FAQ/README.md)** — This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers. Created by [Igor Melnikov](https://github.com/melnikovi).
 
 ## Module Installation
 

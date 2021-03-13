@@ -1,4 +1,4 @@
-# Deactivate PageBuilder
+# Deactivate Page Builder
 
 While you cannot disable Page Builder for a specific CMS Page or Block, you can disable Page Builder for CMS Pages only or CMS Blocks only. This can be useful for when you want to use Page Builder to create new CMS Pages, but don't want Page Builder to change your existing CMS Blocks. For example, you may have CMS Blocks that you created before installing Page Builder with Magento Commerce 2.3.1+ and you don't want Page Builder to wrap your block content within a row as it does by default (which adds div tags that may affect your block designs). This example module shows you how to do just that.
 
