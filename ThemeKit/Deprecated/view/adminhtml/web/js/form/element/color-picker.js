@@ -6,15 +6,10 @@
 /**
  * @api
  */
-define([
-    'mage/translate',
-    'Magento_Ui/js/form/element/abstract',
-    'Example_PageBuilderThemeKit/js/form/element/color-picker-palette'
-], function ($t, Abstract, palette) {
+define(['mage/translate', 'Magento_Ui/js/form/element/abstract', 'ThemeKit_Deprecated/js/form/element/color-picker-palette'], function ($t, Abstract, palette) {
     'use strict';
 
     return Abstract.extend({
-
         defaults: {
             colorPickerConfig: {
                 chooseText: $t('Apply'),
@@ -24,8 +19,8 @@ define([
                 clickoutFiresChange: true,
                 allowEmpty: true,
                 localStorageKey: 'magento.spectrum',
-                palette: palette
-            }
+                palette: palette,
+            },
         },
 
         /**
@@ -38,6 +33,6 @@ define([
             this.colorPickerConfig.value = this.value;
 
             return this;
-        }
+        },
     });
 });

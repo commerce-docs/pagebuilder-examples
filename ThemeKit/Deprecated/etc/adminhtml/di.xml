@@ -10,7 +10,7 @@
         <arguments>
             <argument name="additionalSettings" xsi:type="array">
 
-                <!-- How to add or remove TinyMCE toolbar buttons to your custom Text editor.
+            <!-- How to add or remove TinyMCE toolbar buttons to your custom Text editor.
                      Note the 'code' plugin added to the toolbar here. This provides access
                      to the HTML code used in the editor. To remove toolbar buttons, simply
                      delete one or more of the text entries shown here.-->
@@ -24,7 +24,7 @@
 
                 <item name="textcolor_map" xsi:type="array">
 
-                    <!-- UI Colors -->
+                <!-- UI Colors -->
                     <item name="0" xsi:type="string">333333</item>
                     <item name="1" xsi:type="string">Text</item>
 
@@ -99,7 +99,7 @@
     </type>
 
     <type name="Magento\PageBuilder\Model\Wysiwyg\DefaultConfigProvider">
-        <plugin name="cssContentPlugin" type="Example\PageBuilderThemeKit\Plugin\CssContentPlugin" />
+        <plugin name="cssContentPlugin" type="ThemeKit\Deprecated\Plugin\CssContentPlugin"/>
     </type>
 
 </config>

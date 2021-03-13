@@ -1,6 +1,6 @@
 <?php
 
-namespace Example\PageBuilderThemeKit\Plugin;
+namespace ThemeKit\Deprecated\Plugin;
 
 use Magento\Framework\DataObject;
 use Magento\Framework\View\Asset\Repository;
@@ -30,7 +30,7 @@ class CssContentPlugin
     public function afterGetConfig(DefaultConfigProvider $subject, $tinyConfig): DataObject
     {
         $settings = $tinyConfig['tinymce4']['content_css'];
-        $localTinymceCssUrl = $this->assetRepo->getUrl('Example_PageBuilderThemeKit/css/source/form/element/tinymce.css');
+        $localTinymceCssUrl = $this->assetRepo->getUrl('ThemeKit_Deprecated/css/source/form/element/tinymce.css');
 
         array_push($settings, $localTinymceCssUrl);
         \array_splice($settings, 1, 1);

@@ -6,4 +6,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Example_PageBuilderThemeKit', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'ThemeKit_Deprecated', __DIR__);
