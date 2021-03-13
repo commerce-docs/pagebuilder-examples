@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd" extends="pagebuilder_base_form">
+    <fieldset name="content">
+        <!-- Integrate Hollow button style from theme -->
+        <field name="button_type" formElement="select">
+            <formElements>
+                <select>
+                    <settings>
+                        <options>
+                            <option name="3" xsi:type="array">
+                                <item name="value" xsi:type="string">pagebuilder-button-hollow</item>
+                                <item name="label" xsi:type="string" translate="true">Hollow</item>
+                            </option>
+                        </options>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+    </fieldset>
+</form>
