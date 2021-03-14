@@ -56,7 +56,7 @@ The best way to explore and use these example modules in Page Builder is to clon
     rm Columns
     ```
 
-1. From the Magento root directory, install and enable the example modules using the `setup:upgrade` command:
+1. From the Magento root directory, run the `setup:upgrade` command to install and enable the modules:
 
    ```bash
    bin/magento setup:upgrade
