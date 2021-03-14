@@ -4,9 +4,17 @@ This Admin theme is only required for the `Columns_Extension` module because it 
 
 ## Installation
 
-1. Add this theme to the `app/design/adminhtml` directory in your Magento instance.
+1. If you haven't already done so, clone the `pagebuilder-examples` repo to the root of your Magento instance:
 
-    ![Admin Theme](responsive-admin-theme.png)
+    ```bash
+    git clone https://github.com/magento-devdocs/pagebuilder-examples.git
+    ```
+
+1. Navigate to to the `app/design/adminhtml/` directory in your Magento instance, then use a symlink to add this theme, as shown:
+
+    ```bash
+    ln -s ../../../pagebuilder-examples/Theme
+    ```
 
 1. Run `bin/magento setup:upgrade` to install it.
 
@@ -14,5 +22,8 @@ This Admin theme is only required for the `Columns_Extension` module because it 
 
 Two main things:
 
-1. Overwrites the `_mobile.less` file to remove the `width: 100% !important;` rule in the `.mobile-viewport` class.
+1. Overwrites the `_mobile.less` file to remove the `width: 100% !important;` rule in the `.mobile-viewport` class, shown commented out here:
+
+    ![Admin Theme](responsive-admin-theme.png)
+
 1. Modifies the `switcher.html` template for educational purposes. Page Builder uses this template for its viewport switcher buttons and tooltips.

@@ -36,24 +36,24 @@ The Page Builder team members created these modules to serve as examples for lea
 
 The best way to explore and use these example modules in Page Builder is to clone this repo into the root of your Magento instance, then symlink one or more modules into the `app/code/` directory, and run `setup:upgrade` to install. Step-by-step instructions follow.
 
-1. Open a command line at the root directory of your Magento instance and clone the `pagebuilder-examples` repo:
+1. Clone this repo (`pagebuilder-examples`) to the root of your Magento instance:
 
     ```bash
     git clone https://github.com/magento-devdocs/pagebuilder-examples.git
     ```
 
-1. Navigate to the `app/code/` directory (or create one as needed), then use the symlink command to add the example module you want to install. For example, to install the `Columns` module, use the following command from within the `app/code/` directory:
+1. Navigate to the `app/code/` directory (or create one as needed), then use the symlink command to add one or more of the example modules you want to add to your instance. For example, to install the `Columns` module, use the following command from within the `app/code/` directory:
 
     ```bash
-    ln -s ../../pagebuilder-examples/Columns .
+    ln -s ../../pagebuilder-examples/Columns
     ```
 
     This creates a symlink in `app/code/` called `Columns`, which references the `pagebuilder-examples/Columns` module.
 
-    **To unlink a module**: Use the `unlink` (macOS) or `rm` command, followed by the path to the symlink. This example unlinks the `Columns` module:
+    **To unlink a module**: Use the `unlink` (macOS) or `rm` command, followed by the path to the symlink. This example unlinks the `Columns` module from the `app/code/` directory:
 
     ```bash
-    unlink app/code/Columns
+    rm Columns
     ```
 
 1. From the Magento root directory, install and enable the example modules using the `setup:upgrade` command:
@@ -62,7 +62,7 @@ The best way to explore and use these example modules in Page Builder is to clon
    bin/magento setup:upgrade
    ```
 
-1. Navigate to a CMS page and start using the module.
+1. Navigate to a CMS page and start using the module(s).
 
 ## Contributing
 

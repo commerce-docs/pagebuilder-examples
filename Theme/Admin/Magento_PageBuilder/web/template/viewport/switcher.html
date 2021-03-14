@@ -12,7 +12,6 @@ This template overrides Page Builder's default switcher.html template that
 provides the viewport buttons and tooltips displayed on the Page Builder stage.
 
 The changes here that are different from Page Builder's template include:
-- Added a Knockout conditional tag <if> to show/hide the button on the stage.
 - Change to the tooltip description wording.
 - Addition of a conditional tooltip to clarify the desktop's Width display.
 
@@ -20,8 +19,13 @@ The changes here that are different from Page Builder's template include:
 
 <each args="data: Object.keys(viewports), as: 'name'">
     <span class="tooltip">
-        <button type="button" class="page-builder-viewport" css="$parent.viewports[name].class"
-            disable="name === $parent.viewport()" click="$parent.toggleViewport.bind($parent, name)">
+        <button
+            type="button"
+            class="page-builder-viewport"
+            css="$parent.viewports[name].class"
+            disable="name === $parent.viewport()"
+            click="$parent.toggleViewport.bind($parent, name)"
+        >
             <img data-bind="attr:{src: $parent.viewports[name].icon}" draggable="false" aria-hidden="true" />
         </button>
         <span class="tooltip-content">
