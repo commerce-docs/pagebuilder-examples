@@ -7,11 +7,11 @@ The Page Builder team members created these modules for educational purposes. Th
 
 ## Extension Modules
 
--  **[Banner Extension](Banner/Extension/)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-an-appearance.html). Created by [Bruce Denham](https://github.com/bdenham).
+-  **[Banner Extension](BannerExt/Extension/)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-an-appearance.html). Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Banner Appearance](Banner/Appearance/)** — This module shows you how to add a new appearance to the Banner. This is the completed module featured in the documentation topic [Add appearances](https://devdocs.magento.com/page-builder/docs/content-types/extend/add-appearances.html). Created by [Bruce Denham](https://github.com/bdenham).
+-  **[Banner Appearance](BannerApp/Appearance/)** — This module shows you how to add a new appearance to the Banner. This is the completed module featured in the documentation topic [Add appearances](https://devdocs.magento.com/page-builder/docs/content-types/extend/add-appearances.html). Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Forms Extension](Form/Extensions/)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://github.com/bdenham).
+-  **[Forms Extension](Forms/Extension/)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://github.com/bdenham).
 
 -  **[Button Extension](Button/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://github.com/bdenham).
 
