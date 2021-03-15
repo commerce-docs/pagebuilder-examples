@@ -1,0 +1,24 @@
+{
+  "name": "image/lazy-loading-image",
+  "description": "Image extension that adds lazy loading",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-page-builder": "*",
+    "php": "~7.1.3||~7.2.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "proprietary"
+  ],
+  "authors": [
+    {
+      "name": "Bruce Denham",
+      "email": "bdenham@adobe.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+    <!-- See Magento/PageBuilder/view/adminhtml/pagebuilder/content_type/banner.xml -->
+    <!-- Add or change styles, attributes, elements, and appearances as needed. -->
+    <!-- Be sure to remove any appearances, elements, and template references you are not overriding. -->
+    <type name="banner">
+        <appearances>
+            <appearance name="collage-left">
+                <elements>
+                    <element name="content">
+                        <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
+                        <static_style source="overflow-y" value="auto" />
+                    </element>
+                </elements>
+            </appearance>
+            <appearance name="collage-centered">
+                <elements>
+                    <element name="content">
+                        <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
+                        <static_style source="overflow-y" value="auto" />
+                    </element>
+                </elements>
+            </appearance>
+            <appearance name="collage-right">
+                <elements>
+                    <element name="content">
+                        <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
+                        <static_style source="overflow-y" value="auto" />
+                    </element>
+                </elements>
+            </appearance>
+            <appearance name="poster">
+                <elements>
+                    <element name="content">
+                        <style name="max_height" source="max_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
+                        <static_style source="overflow-y" value="auto" />
+                    </element>
+                </elements>
+            </appearance>
+        </appearances>
+    </type>
+</config>

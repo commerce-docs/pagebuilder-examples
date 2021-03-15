@@ -1,0 +1,40 @@
+//
+//  Banner: Override the DEFAULT appearance styles here.
+//  Source: Magento/PageBuilder/view/frontend/web/css/source/content-type/banner/_default.less
+//  ___________________________________________________________________
+
+& when (@media-common = true) {
+    #html-body {
+        [data-content-type='banner'] {
+            [data-element='wrapper'] {
+                background-color: darkred;
+                border-radius: 10px;
+            }
+
+            [data-element='overlay'] {
+                max-width: 50%;
+            }
+
+            [data-element='content'] {
+                color: white;
+                margin-bottom: 25px;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+
+            [data-element='button'] {
+                background: white;
+                border: white;
+                color: darkred;
+
+                &::after {
+                    content: '❤️';
+                    display: inline-block;
+                    transform: translate(25px, -15px) rotate(25deg) scale(2);
+                }
+            }
+        }
+    }
+}

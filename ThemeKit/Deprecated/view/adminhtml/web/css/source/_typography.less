@@ -1,0 +1,101 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See LICENSE.txt for license details.
+//  */
+
+//
+//  Style overrides for TinyMCE text editor formats.
+//  To integrate your themes typography into the TinyMCE Formats
+//  selector, you must copy your theme's h1-h6, p, and other styles here.
+//  ______________________________________________________________________
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/light/poppins-300.woff2') format('woff2'),
+        url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/light/poppins-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/regular/poppins-400.woff2') format('woff2'),
+        url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/regular/poppins-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/semibold/poppins-600.woff2') format('woff2'),
+        url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/semibold/poppins-600.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/bold/poppins-700.woff2') format('woff2'),
+        url('@{baseDir}ThemeKit_Deprecated/fonts/poppins/bold/poppins-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pagebuilder-stage {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 58px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    // Example of additional styles from your theme you want to include in the TinyMCE Formats selector.
+    // __________________________________________________________________________________________________
+
+    div.lead {
+        color: #333333;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    div.body1 {
+        color: #333333;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    div.body2 {
+        color: #333333;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 23px;
+    }
+}

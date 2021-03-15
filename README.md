@@ -1,56 +1,75 @@
 # Page Builder Examples
 
-This repo is a collection of Page Builder content type modules created to teach you how Page Builder content types work. The modules will help you learn by example, and teach you best practices for developing custom Page Builder modules.
+This repo is a collection of extended and custom content type modules created to teach you how to develop for Page Builder. The modules are designed to help you learn by example, and teach you best practices for extending and creating new content types for Page Builder.
 
-## Example Modules
+**NOTE:**
+The Page Builder team members created these modules for educational purposes. They are not fully tested or guaranteed to work perfectly. However, we will do our best to improve these examples and keep them updated with the latest releases of Page Builder.
 
-The Page Builder team members created these modules to serve as examples for learning. They are not fully tested or guaranteed to work perfectly. However, we will do our best to improve these examples and keep them updated with the latest releases of Page Builder.
+## Extension Modules
 
-- **[PageBuilderButtonTypes](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderButtonTypes)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Banner Extension](Banner/Extension/)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-an-appearance.html). Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderLazyLoading](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderLazyLoading)** — This module shows how to add lazy loading behavior to the Image content type. For this example, we use the [lazysizes](https://github.com/aFarkas/lazysizes) loader. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Banner Appearance](Banner/Appearance/)** — This module shows you how to add a new appearance to the Banner. This is the completed module featured in the documentation topic [Add appearances](https://devdocs.magento.com/page-builder/docs/content-types/extend/add-appearances.html). Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[DeactivatingPageBuilder](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/DeactivatingPageBuilder)** — This example module shows you how to disable Page Builder for a particular page in Magento, specifically Pages, Blocks, and Dynamic Blocks. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Forms Extension](Form/Extensions/)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderExtensionBaseForms](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderExtensionBaseForms)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Button Extension](Button/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderExtensionText](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderExtensionText)** — This module shows you how to customize the Page Builder's Text toolbar, integrate your own theme's typography, and add TinyMCE's `code` plugin to the toolbar so you can view the HTML code directly. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Columns Extension](Columns/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderExtensionSlider](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderExtensionSlider)** — This module shows you how to add `centerMode` and `centerPadding` settings from the [slick carousel](https://kenwheeler.github.io/slick/) used by the Slider. Create by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Deactivate PageBuilder](Deactivate/PageBuilder/)** — This example module shows you how to disable Page Builder for a particular page in Magento, specifically Pages, Blocks, and Dynamic Blocks. Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderExtensionBanner](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderExtensionBanner)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the [Extend a content type tutorial](https://devdocs.magento.com/page-builder/docs/extend-existing-content-type/overview.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Image LazyLoading](Image/LazyLoading/)** — This module shows how to add lazy loading behavior to the Image content type. For this example, we use the [lazysizes](https://github.com/aFarkas/lazysizes) loader. Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderQuote](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderQuote)** — This module shows you how to create a content type for a customer testimonial page. This is the completed Quote module featured in the [Create a content type tutorial](https://devdocs.magento.com/page-builder/docs/create-custom-content-type/overview.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Slider Extension](Slider/Extension/)** — This module shows you how to add `centerMode` and `centerPadding` settings from the [slick carousel](https://kenwheeler.github.io/slick/) used by the Slider. Create by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderGrid](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderGrid)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
+-  **[Text Extension](Text/Extension/)** — This module shows you how to customize the Page Builder's Text toolbar, integrate your own theme's typography, and add TinyMCE's `code` plugin to the toolbar so you can view the HTML code directly. Created by [Bruce Denham](https://github.com/bdenham).
 
-- **[PageBuilderFaq](https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderFaq)** — This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers. Created by [Igor Melnikov](https://github.com/melnikovi).
+## Custom Modules
 
-## Modules Installation
+-  **[Custom Quote](Quote/Custom/)** — This module shows you how to create a content type for a customer testimonial. This is the completed Quote module featured in the documentation tutorial: [Creating content types](https://devdocs.magento.com/page-builder/docs/content-types/create/introduction.html). Created by [Bruce Denham](https://github.com/bdenham).
 
-Assuming you have Page Builder 1.0.* already installed and activated, you can install these example modules as you do any other Magento module.
+-  **[Custom Homepage Grid](Grid/Custom/)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
 
-1. Copy or symlink the `Example` directory into your Magento installation's `app/code` directory, as shown here:
+-  **[Custom FAQ](FAQ/Custom/)** — This module shows you how to create a content type for an FAQ page that uses an accordion for the questions and answers. Created by [Igor Melnikov](https://github.com/melnikovi).
 
-    **To Symlink**:
-    ```terminal
-    ln -s <Relative_route_to_cloned_Example_directory>
+## Installing the example modules
+
+The best way to explore and use these example modules in Page Builder is to clone this repo into the root of your Magento instance, then symlink one or more modules into the `app/code/` directory, and run `setup:upgrade` to install. Step-by-step instructions follow.
+
+1. Clone this repo (`pagebuilder-examples`) to the root of your Magento instance:
+
+    ```bash
+    git clone https://github.com/magento-devdocs/pagebuilder-examples.git
     ```
 
-    <img src="examples-install-location.png" alt="Examples installation directory" width="318px"/>
+1. Navigate to the `app/code/` directory (or create one as needed), then use the symlink command to add one or more of the example modules you want to add to your instance. For example, to install the `Columns` module, use the following command from within the `app/code/` directory:
 
-2. Enable the modules using the following command:
+    ```bash
+    ln -s ../../pagebuilder-examples/Columns
+    ```
+
+    This creates a symlink in `app/code/` called `Columns`, which references the `pagebuilder-examples/Columns` module.
+
+    **To unlink a module**: Use the `unlink` (macOS) or `rm` command, followed by the path to the symlink. This example unlinks the `Columns` module from the `app/code/` directory:
+
+    ```bash
+    rm Columns
+    ```
+
+    Then you can run `bin/magento setup:upgrade` again to remove it from your Magento instance.
+
+1. From the Magento root directory, run the `setup:upgrade` command to install and enable the symlinked modules:
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-3. Navigate to a Page Builder instance to ensure the example content types appear in the Page Builder panel as shown here:
+1. Navigate to a CMS page and start using the module(s).
 
-   <img src="example-content-types.png" alt="Content type examples shown in panel" width="310px"/>
+## Contact us on Slack
+You can join our [#pagebuilder channel](https://magentocommeng.slack.com/messages/CHB455HPF), within [magentocommeng.slack.com](https://magentocommeng.slack.com/), to post your questions to the Page Builder community.
 
+## Feedback
 
-## Contributing
-
-We encourage and welcome you to help us keep these examples current by submitting PRs and issues.
-We also welcome your feedback and ideas about creating other code examples to add to this repo.
+We encourage and welcome you to help us keep these examples current by submitting Issues and Pull Requests. We also welcome your feedback and ideas on other code examples you would like to see added to this repo.

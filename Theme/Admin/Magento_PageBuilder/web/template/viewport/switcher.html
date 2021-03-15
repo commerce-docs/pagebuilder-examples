@@ -1,0 +1,39 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<!--
+CUSTOM TEMPLATE FOR VIEWPORT TOOLTIP CHANGES:
+
+This template overrides Page Builder's default switcher.html template that
+provides the viewport buttons and tooltips displayed on the Page Builder stage.
+
+The changes here that are different from Page Builder's template include:
+- Change to the tooltip description wording.
+- Addition of a conditional tooltip to clarify the desktop's Width display.
+
+-->
+
+<each args="data: Object.keys(viewports), as: 'name'">
+    <span class="tooltip">
+        <button
+            type="button"
+            class="page-builder-viewport"
+            css="$parent.viewports[name].class"
+            disable="name === $parent.viewport()"
+            click="$parent.toggleViewport.bind($parent, name)"
+        >
+            <img data-bind="attr:{src: $parent.viewports[name].icon}" draggable="false" aria-hidden="true" />
+        </button>
+        <span class="tooltip-content">
+            <span class="tooltip-label" translate="$parent.viewports[name].label" /><br />
+            <span translate="'Display your content for '" /><text args="name" /><br />
+            <span if="name !== 'desktop'" translate="'Width'" />
+            <span if="name === 'desktop'" translate="'Minimum Width'" />:
+            <text args="Object.values($parent.viewports[name].conditions)[0]" />
+        </span>
+    </span>
+</each>
