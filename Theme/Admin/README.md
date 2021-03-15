@@ -4,21 +4,15 @@ This Admin theme is only required for the `Columns_Extension` module because it 
 
 ## Installation
 
-Follow these steps to install the theme into your Magento instance:
+These steps assume you have already cloned the `pagebuilder-examples` repo to the root of your Magento instance, as described in [Installing the example modules](../../README.md):
 
-1. Clone the `pagebuilder-examples` repo to the root of your Magento instance:
-
-    ```bash
-    git clone https://github.com/magento-devdocs/pagebuilder-examples.git
-    ```
-
-1. Navigate to to the `app/design/adminhtml/` directory, then use a symlink to add this theme, as shown:
+1. Navigate to to the `app/design/adminhtml/` directory, then use the following symlink command:
 
     ```bash
     ln -s ../../../pagebuilder-examples/Theme
     ```
 
-1. From the Magento root directory, run the `setup:upgrade` command to install and enable the modules:
+1. From the Magento root directory, run the `setup:upgrade` command to install and enable the module:
 
    ```bash
    bin/magento setup:upgrade
@@ -37,3 +31,11 @@ When installed, this theme module updates your Magento instance in two ways:
 1. Modifies the `switcher.html` template. Page Builder uses this template for its viewport switcher buttons and tooltips.
 
     ![Viewport template update](viewport-templates.png)
+
+## Author
+
+[Bruce Denham](https://github.com/bdenham). Contact us on the Slack [#pagebuilder channel](https://slack.com/app_redirect?channel=pagebuilder) for questions specific to this example.
+
+## Feedback
+
+We encourage and welcome you to help us keep these examples current by submitting Issues and Pull Requests. We also welcome your feedback and ideas on other code examples you would like to see added to this repo.

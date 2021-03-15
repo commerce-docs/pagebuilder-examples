@@ -1,32 +1,33 @@
 # Page Builder Examples
 
-This repo is a collection of Page Builder content type modules created to teach you how Page Builder content types work. The modules will help you learn by example, and teach you best practices for developing custom Page Builder modules.
+This repo is a collection of extended and custom content type modules created to teach you how to develop for Page Builder. The modules are designed to help you learn by example, and teach you best practices for extending and creating new content types for Page Builder.
 
-The Page Builder team members created these modules to serve as examples for learning. They are not fully tested or guaranteed to work perfectly. However, we will do our best to improve these examples and keep them updated with the latest releases of Page Builder.
+**NOTE:**
+The Page Builder team members created these modules for educational purposes. They are not fully tested or guaranteed to work perfectly. However, we will do our best to improve these examples and keep them updated with the latest releases of Page Builder.
 
 ## Extension Modules
 
--  **[Banner_Extension](Banner/Extension/)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-an-appearance.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Banner Extension](Banner/Extension/)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-an-appearance.html). Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Banner_Appearance](Banner/Appearance/)** — This module shows you how to add a new appearance to the Banner. This is the completed module featured in the documentation topic [Add appearances](https://devdocs.magento.com/page-builder/docs/content-types/extend/add-appearances.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Banner Appearance](Banner/Appearance/)** — This module shows you how to add a new appearance to the Banner. This is the completed module featured in the documentation topic [Add appearances](https://devdocs.magento.com/page-builder/docs/content-types/extend/add-appearances.html). Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Form_Extensions](Form/Extensions/)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Forms Extension](Form/Extensions/)** — This module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Button_Extension](Button/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Button Extension](Button/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Columns_Extension](Columns/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Columns Extension](Columns/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Deactivate_PageBuilder](Deactivate/PageBuilder/)** — This example module shows you how to disable Page Builder for a particular page in Magento, specifically Pages, Blocks, and Dynamic Blocks. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Deactivate PageBuilder](Deactivate/PageBuilder/)** — This example module shows you how to disable Page Builder for a particular page in Magento, specifically Pages, Blocks, and Dynamic Blocks. Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Image_LazyLoading](Image/LazyLoading/)** — This module shows how to add lazy loading behavior to the Image content type. For this example, we use the [lazysizes](https://github.com/aFarkas/lazysizes) loader. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Image LazyLoading](Image/LazyLoading/)** — This module shows how to add lazy loading behavior to the Image content type. For this example, we use the [lazysizes](https://github.com/aFarkas/lazysizes) loader. Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Slider_Extension](Slider/Extension/)** — This module shows you how to add `centerMode` and `centerPadding` settings from the [slick carousel](https://kenwheeler.github.io/slick/) used by the Slider. Create by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Slider Extension](Slider/Extension/)** — This module shows you how to add `centerMode` and `centerPadding` settings from the [slick carousel](https://kenwheeler.github.io/slick/) used by the Slider. Create by [Bruce Denham](https://github.com/bdenham).
 
--  **[Text_Extension](Text/Extension/)** — This module shows you how to customize the Page Builder's Text toolbar, integrate your own theme's typography, and add TinyMCE's `code` plugin to the toolbar so you can view the HTML code directly. Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Text Extension](Text/Extension/)** — This module shows you how to customize the Page Builder's Text toolbar, integrate your own theme's typography, and add TinyMCE's `code` plugin to the toolbar so you can view the HTML code directly. Created by [Bruce Denham](https://github.com/bdenham).
 
 ## Custom Modules
 
--  **[Custom Quote](Quote/Custom/)** — This module shows you how to create a content type for a customer testimonial. This is the completed Quote module featured in the documentation tutorial: [Creating content types](https://devdocs.magento.com/page-builder/docs/content-types/create/introduction.html). Created by [Bruce Denham](https://magentocommeng.slack.com/messages/UA3GYB2KW).
+-  **[Custom Quote](Quote/Custom/)** — This module shows you how to create a content type for a customer testimonial. This is the completed Quote module featured in the documentation tutorial: [Creating content types](https://devdocs.magento.com/page-builder/docs/content-types/create/introduction.html). Created by [Bruce Denham](https://github.com/bdenham).
 
 -  **[Custom Homepage Grid](Grid/Custom/)** — This module shows you how to create a content type that recreates the layout of the Magento Luma-themed home page using a grid structure with grid items. Created by [Dave Macaulay](https://github.com/davemacaulay).
 
@@ -56,7 +57,9 @@ The best way to explore and use these example modules in Page Builder is to clon
     rm Columns
     ```
 
-1. From the Magento root directory, run the `setup:upgrade` command to install and enable the modules:
+    Then you can run `bin/magento setup:upgrade` again to remove it from your Magento instance.
+
+1. From the Magento root directory, run the `setup:upgrade` command to install and enable the symlinked modules:
 
    ```bash
    bin/magento setup:upgrade
@@ -64,7 +67,9 @@ The best way to explore and use these example modules in Page Builder is to clon
 
 1. Navigate to a CMS page and start using the module(s).
 
-## Contributing
+## Contact us on Slack
+You can join our [#pagebuilder channel](https://magentocommeng.slack.com/messages/CHB455HPF), within [magentocommeng.slack.com](https://magentocommeng.slack.com/), to post your questions to the Page Builder community.
 
-We encourage and welcome you to help us keep these examples current by submitting PRs and issues.
-We also welcome your feedback and ideas about creating other code examples to add to this repo.
+## Feedback
+
+We encourage and welcome you to help us keep these examples current by submitting Issues and Pull Requests. We also welcome your feedback and ideas on other code examples you would like to see added to this repo.

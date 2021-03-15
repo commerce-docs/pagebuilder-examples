@@ -4,16 +4,27 @@ This module shows how to add lazy loading behavior to the Image content type. Fo
 
 ## Installation and usage
 
-To install this extension module:
+These steps assume you have already cloned the `pagebuilder-examples` repo to the root of your Magento instance, as described in [Installing the example modules](../../README.md):
 
-1. Copy the `Image` directory and all its contents into the `app/code/` directory.
-2. Command line into your `<magento-root>` directory and run `bin/magento setup:upgrade` to install the extension.
-3. Drag and drop several Image content types onto the stage, upload images to each, and Save.
-4. Open the Network tab in Chrome's devtools and watch the magic (you should see `lazysizes.js` as the initiator for your images). 
+1. Navigate to to the `app/code/` directory and create a symlink using the following command:
+
+    ```bash
+    ln -s ../../pagebuilder-examples/Image
+    ```
+
+1. From the Magento root directory, run the `setup:upgrade` command to install and enable the module:
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. Drag and drop several Image content types onto the stage, upload images to each, and Save.
+
+1. Open the Network tab in Chrome's devtools and watch the magic (you should see `lazysizes.js` as the initiator for your images).
 
 ## Discussion
 
-Adding lazy loading (using [lazysizes](https://github.com/aFarkas/lazysizes)) to the Page Builder Image content type turns out to be fairly simple. There's very little coding involved and only a few small changes to the native Image content type configuration and HTML templates. 
+Adding lazy loading (using [lazysizes](https://github.com/aFarkas/lazysizes)) to the Page Builder Image content type turns out to be fairly simple. There's very little coding involved and only a few small changes to the native Image content type configuration and HTML templates.
 
 There are three main tasks:
 
@@ -38,7 +49,7 @@ There are several approaches you could take to adding the `lazysizes` loader to 
         <script src="Image_LazyLoading/js/resource/lazysizes/lazysizes.min.js"></script>
         <script src="Image_LazyLoading/js/resource/lazysizes/ls.attrchange.min.js"></script>
 
-        <!-- CDN --> 
+        <!-- CDN -->
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js" src_type="url"></script>-->
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/plugins/attrchange/ls.attrchange.min.js" src_type="url"></script>-->
     </head>
@@ -57,7 +68,7 @@ The `lazySizesConfig.js` file is optional, but if you use it, you must load it b
 })();
 ```
 
-To learn more about configuring the lazysizes loader, see: https://github.com/aFarkas/lazysizes#js-api. 
+To learn more about configuring the lazysizes loader, see: https://github.com/aFarkas/lazysizes#js-api.
 
 
 ### Adding `lazyload` classes
@@ -75,9 +86,9 @@ Copy the `master.html` and `preview.html` templates from Page Builder's native I
 
 ### Overriding the native Image configuration
 
-Here we want to override the Page Builder's native Image configuration (`image.xml`) with our own `image.xml`. And because of Magento's XML merging, we only have to make two minor configuration changes: 
+Here we want to override the Page Builder's native Image configuration (`image.xml`) with our own `image.xml`. And because of Magento's XML merging, we only have to make two minor configuration changes:
 
-* Change the HTML template references to point to our module's `master.html `and `preview.html` templates. 
+* Change the HTML template references to point to our module's `master.html `and `preview.html` templates.
 * Change the `desktop_image` and `mobile_image` elements to use `data-src` rather than `src` (as most lazy loaders require).
 
 We show both changes in our example module's `image.xml` config file:
@@ -104,7 +115,7 @@ We show both changes in our example module's `image.xml` config file:
 </config>
 ```
 
-That's all there is to it! 
+That's all there is to it!
 
 ## Using other lazy loaders
 
@@ -112,11 +123,12 @@ Instead of using `lazysizes`, you can use other lazyloaders (like [lozad](https:
 
 1.  Add `lozad.js` file to your module or use a CDN.
 2.  Add the 'lozad' class to your template `<img>` tags.
-3.  Override the native Image configuration to point to your templates and use `data-src` instead of `src` for you desktop and mobile image sources. 
+3.  Override the native Image configuration to point to your templates and use `data-src` instead of `src` for you desktop and mobile image sources.
+
+## Author
+
+[Bruce Denham](https://github.com/bdenham). Contact us on the Slack [#pagebuilder channel](https://slack.com/app_redirect?channel=pagebuilder) for questions specific to this example.
 
 ## Feedback
 
-We encourage and welcome you to help us keep these examples current by submitting pull requests and issues. We also welcome your feedback and ideas on other code examples you would like to see added to this repo. 
-
-## Slack
-You can join our [#pagebuilder channel](https://magentocommeng.slack.com/messages/CHB455HPF), within [magentocommeng.slack.com](https://magentocommeng.slack.com/), to post your questions to the Page Builder community.
+We encourage and welcome you to help us keep these examples current by submitting Issues and Pull Requests. We also welcome your feedback and ideas on other code examples you would like to see added to this repo.

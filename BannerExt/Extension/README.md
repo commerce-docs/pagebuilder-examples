@@ -1,6 +1,6 @@
-# Page Builder - Custom Quote
+# Banner Extension
 
-This is the completed module for the Create content type tutorial within the Page Builder documentation. It not only provides an example of a simple content type, but it also shows examples of other tasks you can implement using Page Builder's framework.
+This example module shows you how to customize the existing Banner content type, as described in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-an-appearance.html).
 
 ## Installation
 
@@ -9,7 +9,7 @@ These steps assume you have already cloned the `pagebuilder-examples` repo to th
 1. Navigate to to the `app/code/` directory and create a symlink using the following command:
 
     ```bash
-    ln -s ../../pagebuilder-examples/Quote
+    ln -s ../../pagebuilder-examples/BannerExt
     ```
 
 1. From the Magento root directory, run the `setup:upgrade` command to install and enable the module:
@@ -17,21 +17,6 @@ These steps assume you have already cloned the `pagebuilder-examples` repo to th
    ```bash
    bin/magento setup:upgrade
    ```
-
-## What's Included
-The Quote module provides examples for the following content type elements:
-
-- Custom toolbar
-- Storefront widget
-- Image uploader
-- Inline text editor
-- Custom images
-- Custom styles
-- Custom breakpoints
-- Event handling
-- Visual selectors
-
-This example module can be installed into any Magento 2.3+ instance with Page Builder installed.
 
 ## Author
 
