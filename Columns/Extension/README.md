@@ -4,7 +4,7 @@ This module provides an example that shows how to use breakpoints to control the
 
 ## Installation
 
-These steps assume you have already cloned the `pagebuilder-examples` repo to the root of your Magento instance, as described in [Installing the example modules](../../README.md):
+These steps assume you have already cloned the `pagebuilder-examples` repo to the root of your Magento instance, as described in [Installing the example modules](https://github.com/magento-devdocs/pagebuilder-examples/blob/master/README.md#installing-the-example-modules):
 
 1. Navigate to to the `app/code/` directory and create a symlink using the following command:
 
