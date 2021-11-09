@@ -1,12 +1,16 @@
 # PageBuilder- Base Form Extensions
 
-This example module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Page Builder uses two forms to provide fieldsets and fields to all its content types:
+This example module shows you how to remove fields and fieldsets from Page Builder's built-in forms. Page Builder uses three forms to provide fieldsets and fields to all its content types:
 
 *  `Magento/PageBuilder/view/adminhtml/ui_component/pagebuilder_base_form.xml`
 *  `Magento/PageBuilder/view/adminhtml/ui_component/pagebuilder_base_form_with_background_attributes.xml`
+*  `Magento/PageBuilder/view/adminhtml/ui_component/pagebuilder_base_form_with_background_video.xml`
 
 The `pagebuilder_base_form.xml` provides the Advanced fieldset and all its fields (such as alignments, borders, margins and paddings).
-The `pagebuilder_base_form_with_background_attributes.xml` provides the Background fieldset and all its fields (such as background images, sizes, and positions).
+
+The `pagebuilder_base_form_with_background_attributes.xml` form inherits from the `pagebuilder_base_form` and adds the Background fieldset with all its fields (such as background images, sizes, and positions).
+
+Finally, the `pagebuilder_base_form_with_background_video.xml` form inherits from the `pagebuilder_base_form_with_background_attributes` and adds the Background Video fieldset with all its fields (such as video sources, sizes, and positions).
 
 As this example shows, you can _globally_ remove the fields or fieldsets from these base forms by adding same-named XML files to your module. Within these files, you simply add the field or fieldset you want to remove by nesting the `componentDisabled` setting. For example, to remove the border radius field:
 
