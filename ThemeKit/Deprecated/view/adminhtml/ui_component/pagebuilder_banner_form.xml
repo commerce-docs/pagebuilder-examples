@@ -6,7 +6,7 @@
  */
 -->
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd"
-      extends="pagebuilder_base_form_with_background_attributes">
+      extends="pagebuilder_base_form_with_background_video">
     <fieldset name="contents" sortOrder="30">
         <field name="button_type" formElement="select">
             <formElements>
@@ -36,4 +36,3 @@
         </field>
     </fieldset>
 </form>
-
