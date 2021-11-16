@@ -15,7 +15,7 @@ The Page Builder team members created these modules for educational purposes. Th
 
 -  **[Button Extension](Button/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://github.com/bdenham).
 
--  **[Columns Extension](Columns/Extension/)** — This module shows how to add custom button types. Created by [Bruce Denham](https://github.com/bdenham).
+-  **[Columns Extension](Columns/Extension/)** — This module shows how to use breakpoints to control the responsive layout of columns. Created by [Bruce Denham](https://github.com/bdenham).
 
 -  **[Deactivate PageBuilder](Deactivate/PageBuilder/)** — This example module shows you how to disable Page Builder for a particular page in Magento, specifically Pages, Blocks, and Dynamic Blocks. Created by [Bruce Denham](https://github.com/bdenham).
 
