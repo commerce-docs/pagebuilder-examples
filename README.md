@@ -7,7 +7,7 @@ The Page Builder team members created these modules for educational purposes. Th
 
 ## Extension Modules
 
--  **[Banner Extension](BannerExt/Extension/)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-an-appearance.html). Created by [Bruce Denham](https://github.com/bdenham).
+-  **[Banner Extension](BannerExt/Extension/)** — This module shows you how to customize an existing content type: the Banner. This is the completed module featured in the documentation topic [Extend an appearance](https://devdocs.magento.com/page-builder/docs/content-types/extend/extend-appearances.html). Created by [Bruce Denham](https://github.com/bdenham).
 
 -  **[Banner Appearance](BannerApp/Appearance/)** — This module shows you how to add a new appearance to the Banner. This is the completed module featured in the documentation topic [Add appearances](https://devdocs.magento.com/page-builder/docs/content-types/extend/add-appearances.html). Created by [Bruce Denham](https://github.com/bdenham).
 
