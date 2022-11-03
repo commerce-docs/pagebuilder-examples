@@ -1,5 +1,5 @@
 <div class="pagebuilder-content-type pagebuilder-faq-item type-nested" attr="Object.assign({}, {id: parent.id}, data.main.attributes())" ko-style="data.main.style()" css="data.main.css()" event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
-    <render args="getOptions().template" />
+    <render args="getOptions().template"></render>
     <h3 data-bind="liveEdit: { field: 'question', placeholder: 'Edit question' }" class="pagebuilder-faq-item-collapsible" aria-expanded="true"></h3>
     <div data-role="content">
         <div if="isWysiwygSupported()" class="inline-wysiwyg" ko-style="data.answer.style" css="data.answer.css" attr="data.answer.attributes" afterRender="initWysiwyg">
