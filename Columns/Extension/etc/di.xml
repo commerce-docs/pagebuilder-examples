@@ -18,7 +18,7 @@ to the custom breakpoint property: columnsPerRow.
     <type name="Magento\Theme\Model\View\Design">
         <arguments>
             <argument name="themes" xsi:type="array">
-                <item name="adminhtml" xsi:type="string">Theme/Admin</item>
+                <item name="adminhtml" xsi:type="string">Magento/Backend</item>
             </argument>
         </arguments>
     </type>
