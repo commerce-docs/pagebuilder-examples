@@ -40,7 +40,7 @@ The best way to explore and use these example modules in Page Builder is to clon
 1. Clone this repo (`pagebuilder-examples`) to the root of your Magento instance:
 
     ```bash
-    git clone https://github.com/magento-devdocs/pagebuilder-examples.git
+    git clone https://github.com/commerce-docs/pagebuilder-examples.git
     ```
 
 1. Navigate to the `app/code/` directory (or create one as needed), then use the symlink command to add one or more of the example modules you want to add to your instance. For example, to install the `Columns` module, use the following command from within the `app/code/` directory:
