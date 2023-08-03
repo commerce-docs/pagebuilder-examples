@@ -1,0 +1,25 @@
+{
+  "templateVersion": "0.2",
+  "product": {
+    "name": "Page Builder",
+    "description": "Page Builder example modules for you to download, install, and learn from."
+  },
+  "contacts": {
+    "team": {
+      "name": "Commerce Docs",
+      "DL": "Grp-commerce-docs",
+      "slackChannel": "#commerce-docs"
+    }
+  },
+  "ticketTracker": {
+    "functionalJiraQueue": {
+        "projectKey": "COMDOX",
+        "component": "Maintenance"
+    },
+    "securityJiraQueue": {
+        "projectKey": "MAGREQ",
+        "component": "Commerce M2"
+    }
+  },  
+  "productionCodeBranches": ["master"]
+}
